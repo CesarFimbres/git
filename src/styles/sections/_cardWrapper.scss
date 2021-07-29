@@ -1,0 +1,12 @@
+.CardWrapper {
+	background: transparent;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+	height: auto;
+	justify-content: space-evenly;
+	width: 90%;
+	z-index: 103;
+	position: relative;
+	top: -225px;
+}

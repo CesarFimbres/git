@@ -1,0 +1,54 @@
+.btn_frame {
+	background: $pri;
+	border: none;
+	border-radius: 2px;
+	color: $white;
+	font-size: 0.75rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin: 0 15px;
+	padding: 10px 30px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	&:hover {
+		background: $white;
+		color: $pri;
+	}
+	&::after {
+		margin: -5px;
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 10px;
+		height: 10px;
+		border-bottom: 2px solid $pri;
+		border-right: 2px solid $pri;
+		transition: 0.5s;
+	}
+	&:hover:after {
+		border-color: $white;
+		height: 99%;
+		width: 99%;
+	}
+
+	&::before {
+		margin: -5px;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 10px;
+		height: 10px;
+		border-top: 2px solid $pri;
+		border-left: 2px solid $pri;
+		transition: 0.5s;
+	}
+	&:hover:before {
+		border-color: $white;
+		height: 99%;
+		width: 99%;
+	}
+}

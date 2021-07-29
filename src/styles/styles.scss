@@ -1,0 +1,14 @@
+// * CSS Basics
+@import "./base/settings";
+@import "./base/base";
+
+// * CSS Components
+@import "./components/buttons";
+@import "./components/enterpriceCard";
+@import "./components/navbar";
+@import "./components/videoHero";
+
+// * CSS Sections
+@import "./sections/about";
+@import "./sections/hero";
+@import "./sections/cardWrapper";

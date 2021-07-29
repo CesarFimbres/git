@@ -1,0 +1,62 @@
+video {
+	object-fit: cover;
+}
+
+.videoHero {
+	height: 90vh;
+	margin-bottom: 7rem;
+	position: relative;
+	&-frame {
+		content: "";
+		height: 29rem;
+		width: 19rem;
+		border: 1.3rem solid $pri;
+		position: absolute;
+		z-index: 100;
+	}
+	&-overlay {
+		background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.75) 30%,
+			rgba(255, 255, 255, 0) 67%
+		);
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-left: 8rem;
+		z-index: 100;
+	}
+	&-title {
+		color: $white;
+		font-family: "Montserrat", sans-serif;
+		font-size: 3.5rem;
+		width: 500px;
+		position: relative;
+		left: 65px;
+		top: 0px;
+		z-index: 102;
+	}
+	&-paragraph {
+		color: $white;
+		font-family: "Montserrat", sans-serif;
+		font-size: 1rem;
+		max-width: 500px;
+		position: relative;
+		left: 65px;
+		top: 30px;
+		z-index: 102;
+	}
+}
+
+button {
+	height: 35px;
+	width: 150px;
+	z-index: 102;
+	left: 65px;
+	top: 65px;
+}
