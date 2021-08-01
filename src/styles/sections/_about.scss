@@ -1,5 +1,103 @@
 .about {
 	background: $sec;
-	color: $white;
 	padding: 5rem 0;
+	&-container {
+		align-items: center;
+		color: $white;
+		display: flex;
+		flex-flow: column nowrap;
+		height: 85vh;
+		z-index: 200;
+		position: relative;
+		width: 70%;
+	}
+	&-frame {
+		content: '';
+		border: 1rem solid $pri;
+		height: 22rem;
+		width: 40vw;
+		position: absolute;
+		left: 0;
+		top: 15rem;
+		z-index: 201;
+	}
+	&-image {
+		height: 50vh;
+		overflow: hidden;
+		position: absolute;
+		top: 12rem;
+		width: 80%;
+		z-index: 202;
+		& img {
+			border-radius: 4px;
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+			object-position: top center;
+			transition: all 5s;
+			&:hover {
+				height: 120%;
+				width: 120%;
+			}
+		}
+	}
+	&-comments {
+		background: $white;
+		box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+		border-radius: 4px;
+		display: flex;
+		flex-flow: column nowrap;
+		height: auto;
+		width: 233px;
+		padding: 20px;
+		position: absolute;
+		top: 225px;
+		right: 0;
+		z-index: 203;
+		& h3 {
+			color: $sec;
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.8rem;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+		}
+		& p {
+			color: lighten($sec, 5%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 0.8rem;
+			font-weight: 400;
+			margin-bottom: 1rem;
+			letter-spacing: 1px;
+		}
+		& a {
+			align-self: flex-end;
+			color: $pri;
+			font-family: 'Roboto', sans-serif;
+			font-size: 0.8rem;
+			font-weight: 600;
+			padding: 1rem;
+			transition: all 0.3s;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.title_section {
+	display: block;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 100;
+	text-transform: uppercase;
+	position: absolute;
+	top: 5rem;
+	& span {
+		color: lighten($pri, 35%);
+		font-family: 'Monserrat', sans-serif;
+		font-weight: 900;
+	}
 }

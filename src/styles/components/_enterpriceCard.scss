@@ -1,16 +1,16 @@
 .EnterpriceCard {
-	background: darken($white, 5%);
+	background: darken($white, 7%);
 	border-radius: 4px;
 	height: 575px;
 	// margin: 10px;
-	min-width: 350px;
+	min-width: 292px;
 	padding: 20px;
 	width: 23%;
 	filter: grayscale(90%);
 	transition: all 0.3s;
 	&:hover {
-		background: $white;
-		box-shadow: 5px 5px 20px lighten(rgba(0, 0, 0, 0.35), 10%);
+		background: white;
+		box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.35);
 		filter: grayscale(0%);
 		transform: scale(1.05);
 	}
@@ -24,14 +24,14 @@
 		}
 		& span {
 			color: lighten($pri, 50%);
-			font-family: "Roboto", sans-serif;
+			font-family: 'Roboto', sans-serif;
 			font-size: 8rem;
 			font-weight: 900;
 		}
 	}
 	&-title {
 		color: darken($pri, 7%);
-		font-family: "Montserrat", sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 1.5rem;
 		height: 3.5rem;
 		margin: 25px 0;
@@ -48,7 +48,7 @@
 		height: 35px;
 		width: 150px;
 		z-index: 102;
-		left: 187px;
+		right: 0;
 		top: 25px;
 	}
 }

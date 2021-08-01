@@ -6,9 +6,10 @@ import { Blog } from "../sections/Blog";
 import { Footer } from "../sections/Footer";
 import { Hero } from "../sections/Hero";
 import { Mission } from "../sections/Mission";
+import { Modal } from "../Modal";
 import { Navbar } from "../sections/Navbar";
 import { Proyects } from "../sections/Proyects";
-import { Services } from "../sections/Services";
+// import { Services } from "../sections/Services";
 
 export const Homepage = () => {
 	return (
@@ -17,11 +18,12 @@ export const Homepage = () => {
 			<Hero />
 			<About />
 			<Mission />
-			<Services />
+			{/* <Services /> */}
 			<Banner />
 			<Proyects />
 			<Blog />
 			<Footer />
+			<Modal />
 		</main>
 	);
 };

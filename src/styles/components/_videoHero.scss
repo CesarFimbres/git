@@ -6,8 +6,9 @@ video {
 	height: 90vh;
 	margin-bottom: 7rem;
 	position: relative;
+	width: 100%;
 	&-frame {
-		content: "";
+		content: '';
 		height: 29rem;
 		width: 19rem;
 		border: 1.3rem solid $pri;
@@ -33,7 +34,7 @@ video {
 	}
 	&-title {
 		color: $white;
-		font-family: "Montserrat", sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 3.5rem;
 		width: 500px;
 		position: relative;
@@ -43,7 +44,7 @@ video {
 	}
 	&-paragraph {
 		color: $white;
-		font-family: "Montserrat", sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 1rem;
 		max-width: 500px;
 		position: relative;

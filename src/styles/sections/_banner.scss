@@ -1,0 +1,44 @@
+.banner {
+	background: $pri;
+	color: $white;
+	flex-flow: column nowrap;
+	height: 45vh;
+	overflow: hidden;
+	padding: 5rem 0;
+	position: relative;
+	&-overlay {
+		position: absolute;
+		z-index: 201;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		& h2,
+		h3,
+		h4 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 100;
+			margin-bottom: 1.5rem;
+		}
+		& h2 {
+			font-size: 3rem;
+		}
+		& h3 {
+			font-size: 2rem;
+		}
+		& h4 {
+			font-size: 1rem;
+		}
+	}
+	& img {
+		height: 100%;
+		filter: opacity(0.12);
+		object-fit: fill;
+		object-position: top center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 200;
+	}
+}

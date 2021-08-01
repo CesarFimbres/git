@@ -19,7 +19,7 @@ body {
 	background-color: $white;
 	display: flex;
 	flex-flow: column nowrap;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	height: auto;
 	width: 100%;
 }
@@ -30,10 +30,6 @@ main {
 	flex-flow: column nowrap;
 	position: relative;
 	width: 100vw;
-}
-
-section {
-	margin-bottom: 3rem;
 }
 
 .mb_1 {

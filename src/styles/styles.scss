@@ -1,14 +1,18 @@
 // * CSS Basics
-@import "./base/settings";
-@import "./base/base";
+@import './base/settings';
+@import './base/base';
 
 // * CSS Components
-@import "./components/buttons";
-@import "./components/enterpriceCard";
-@import "./components/navbar";
-@import "./components/videoHero";
+@import './components/buttons';
+@import './components/enterpriceCard';
+@import './components/modal';
+@import './components/navbar';
+@import './components/videoHero';
 
 // * CSS Sections
-@import "./sections/about";
-@import "./sections/hero";
-@import "./sections/cardWrapper";
+@import './sections/about';
+@import './sections/banner';
+@import './sections/cardWrapper';
+@import './sections/hero';
+@import './sections/mission';
+@import './sections/proyects';

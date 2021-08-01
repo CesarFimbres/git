@@ -1,5 +1,5 @@
 .nav {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background: $pri;
 	height: 5rem;
 	&-label,
@@ -51,6 +51,7 @@
 		left: 0;
 		position: fixed;
 		width: 100%;
+		z-index: 1000;
 		&-label {
 			cursor: pointer;
 			display: block;

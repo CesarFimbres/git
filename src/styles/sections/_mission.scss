@@ -1,0 +1,89 @@
+.mission {
+	padding: 7rem 0;
+	align-items: center;
+	color: $sec;
+	display: flex;
+	flex-flow: column nowrap;
+	z-index: 200;
+	position: relative;
+	width: 90%;
+	&-contacto {
+		background: $sec;
+		box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+		color: $white;
+		flex: 2 1;
+		padding: 20px;
+		min-width: 300px;
+	}
+	&-container {
+		align-items: stretch;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		gap: 10px;
+	}
+	&-comments {
+		background: $white;
+		border: 1px solid $pri;
+		border-radius: 4px;
+		display: flex;
+		flex: 1;
+		flex-flow: column nowrap;
+		min-width: 300px;
+		padding: 20px;
+		z-index: 203;
+		& h3 {
+			color: $sec;
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.8rem;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+		}
+		& p {
+			color: lighten($sec, 5%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1rem;
+			font-weight: 400;
+			margin-bottom: 1rem;
+			letter-spacing: 1px;
+		}
+		& a {
+			align-self: flex-end;
+			color: $pri;
+			font-family: 'Roboto', sans-serif;
+			font-size: 0.8rem;
+			font-weight: 600;
+			padding: 1rem;
+			transition: all 0.3s;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+				font-weight: 600;
+			}
+		}
+	}
+	&-image {
+		height: 380px;
+		min-width: 300px;
+		overflow: hidden;
+		flex: 1;
+		z-index: 202;
+		& img {
+			border-radius: 4px;
+			height: 100%;
+			object-fit: cover;
+			object-position: center center;
+			transition: all 5s;
+			width: 100%;
+			&:hover {
+				height: 120%;
+				width: 120%;
+			}
+		}
+	}
+}
+
+.title_section {
+	position: unset;
+	padding-bottom: 5rem;
+}

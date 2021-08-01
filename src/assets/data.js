@@ -1,16 +1,32 @@
-import logoCsm from "./img/logo-csm.png";
-import logoEguel from "./img/logo-eguel.png";
-import logoIta from "./img/logo-ita.png";
-import logoIte from "./img/logo-ite.png";
-import logoGit from "./img/logo-git.svg";
-
 import about01 from "./img/about_01.jpg";
 
-export const About = [
+import bnner01 from './img/banner_01.jpg'
+
+import logoCsm from "./img/logo-csm.png";
+import logoEguel from "./img/logo-eguel.svg";
+import logoIta from "./img/logo-ita.svg";
+import logoIte from "./img/logo-ite.svg";
+import logoGit from "./img/logo-git.svg";
+
+import mission01 from './img/misison_01.jpg'
+
+export const AboutData = [
 	{
 		index: 0,
 		image: about01,
-		title: "Grupo INTECSA S. A. de C. V.",
+		title: "Grupo INTECSA",
+		paragraph:
+			"Es orgullosamente Mexicano con más de 24 años de trayectoria, es un grupo de empresas dedicado a la instalación, planeación, construcción, mantenimiento de centros comerciales y tiendas departamentales especializada en proyectos electromecánicos.",
+	},
+];
+
+export const BannerData = [
+	{
+		index: 0,
+		image: bnner01,
+		title: "Trabajemos juntos",
+		phone: "(52+) 55-4841-1002",
+		address: "Ciudad de México, C. P. 01210"
 	},
 ];
 
@@ -27,14 +43,14 @@ export const Enterprises = [
 		image: logoIte,
 		title: "Instalaciones y Técnica",
 		paragraph:
-			"Instalaciones y Técnica S. A. DE C. V.; es una empresa dedicada a la planeación, construcción, instalación y mantenimiento de centros comerciales, tiendas departamentales, naves industriales y edificios inteligentes, contamos con el equipo humano y tecnológico capaz de ofrecer a nuestros clientes atención directa, trato amable, respuesta inmediata y conocimiento integral en cada una de las etapas que constituye su proyecto, denos una idea… nosotros la hacemos realidad.",
+			"Empresa especializada en la planeación, construcción, instalación y mantenimiento de centros comerciales, tiendas departamentales, naves industriales y edificios inteligentes, denos una idea… nosotros la hacemos realidad.",
 	},
 	{
 		index: 2,
 		image: logoIta,
 		title: "Instalaciones Técnologicas Aplicadas",
 		paragraph:
-			"Es una empresa Mexicana con más de 14 años de experiencia que ofrece soluciones en electricidad, desde el diseño de proyectos, levantamientos, asesorías técnicas, mediciones para estudios de calidad en la energía, integración de equipos eléctricos en baja y media tensión; distribuidores de productos ABB, ONKA, FINDER, especialistas en CODIGO DE RED, proyectos de automatización y domótica.",
+			"Empresa con más de 15 años de experiencia ofrece soluciones en electricidad, diseño de proyectos, levantamientos, asesorías técnicas, mediciones para estudios de calidad en la energía, integración de equipos eléctricos en baja y media tensión especialistas en CODIGO DE RED.",
 	},
 	{
 		index: 3,
@@ -49,5 +65,15 @@ export const Enterprises = [
 		title: "Canalización y Soportería Mexicana",
 		paragraph:
 			"Especializada en manufactura de productos metalmecánicos principalmente en aluminio, lámina galvanizada, lámina negra y latón, contamos con la tecnología de corte laser, corte wáter jet, punzonadora, dobladora de lámina y maquinado CNC. Ofrecemos asesoría en el diseño de piezas especiales.",
+	},
+];
+
+export const MissionData = [
+	{
+		index: 0,
+		image: mission01,
+		title: "Ser el referente",
+		paragraph:
+			"Somos una organización líder en la región reconocida por la pasión para innovar, nuestra misión es satisfacer las necesidades de nuestros clientes antes, durante y después de finalizado el proyecto, cumpliendo con la Calidad y los tiempos de entrega en una forma competitiva y creativa.",
 	},
 ];

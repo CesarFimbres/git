@@ -1,0 +1,16 @@
+.modal {
+	align-items: center;
+	background: rgba($pri, 0.85);
+	display: none;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 1100;
+}
+
+.modal-active {
+	display: flex;
+}
