@@ -13,11 +13,13 @@ export const HeroVideo = () => {
 			<div className="videoHero-overlay">
 				<div className="videoHero-frame"> </div>
 				<h1 className="videoHero-title">ES MOMENTO DE MEJORAR</h1>
-				<p className="videoHero-paragraph">
+				{/* <p className="videoHero-paragraph">
 					La vida no es esperar a que pase la tormenta, ni abrir el paraguas para no
-					mojarte, es aprender a bilar bajo la lluvia.
-				</p>
-				<button className="btn_frame">Click me</button>
+					mojarte, es aprender a bailar bajo la lluvia.
+				</p> */}
+				<div className="videoHero-logo">
+					<img src="logo.svg" alt="Logotipo Grupo Intecsa S. A. de C. V." />
+				</div>
 			</div>
 		</div>
 	);

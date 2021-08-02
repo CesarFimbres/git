@@ -1,5 +1,5 @@
 .nav {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	background: $pri;
 	height: 5rem;
 	&-label,
@@ -19,7 +19,7 @@
 	}
 	&-item {
 		color: $white;
-		font-size: 0.75rem;
+		font-size: 1rem;
 		padding: 10px;
 		text-decoration: none;
 		transition: box-shadow 0.5s;
