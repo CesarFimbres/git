@@ -8,7 +8,7 @@ import { Hero } from "../sections/Hero";
 import { Mission } from "../sections/Mission";
 import { Modal } from "../Modal";
 import { Navbar } from "../sections/Navbar";
-import { Proyects } from "../sections/Proyects";
+import { Projects } from "../sections/Projects";
 // import { Services } from "../sections/Services";
 
 export const Homepage = () => {
@@ -20,7 +20,7 @@ export const Homepage = () => {
 			<Mission />
 			{/* <Services /> */}
 			<Banner />
-			<Proyects />
+			<Projects />
 			<Blog />
 			<Footer />
 			<Modal />

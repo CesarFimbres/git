@@ -1,0 +1,16 @@
+.projects {
+	padding: 5rem 0;
+	&-swiperslider {
+		border: 3px solid $pri;
+		border-radius: 4px;
+		height: 35vh;
+		width: auto;
+		object-fit: cover;
+		& img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

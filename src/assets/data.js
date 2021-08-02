@@ -10,6 +10,15 @@ import logoGit from "./img/logo-git.svg";
 
 import mission01 from './img/misison_01.jpg'
 
+import projects01 from './img/projects_01.jpg'
+import projects02 from './img/projects_02.jpg'
+import projects03 from './img/projects_03.jpg'
+import projects04 from './img/projects_04.jpg'
+import projects05 from './img/projects_05.jpg'
+import projects06 from './img/projects_06.jpg'
+import projects07 from './img/projects_07.jpg'
+import projects08 from './img/projects_08.jpg'
+
 export const AboutData = [
 	{
 		index: 0,
@@ -75,5 +84,64 @@ export const MissionData = [
 		title: "Ser el referente",
 		paragraph:
 			"Somos una organización líder en la región reconocida por la pasión para innovar, nuestra misión es satisfacer las necesidades de nuestros clientes antes, durante y después de finalizado el proyecto, cumpliendo con la Calidad y los tiempos de entrega en una forma competitiva y creativa.",
+	},
+];
+
+export const ProjectsData = [
+	{
+		index: 0,
+		image: projects01,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
+	},
+	{
+		index: 1,
+		image: projects02,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
+	},
+	{
+		index: 2,
+		image: projects03,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
+	},
+	{
+		index: 3,
+		image: projects04,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
+	},
+	{
+		index: 4,
+		image: projects05,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
+	},
+	{
+		index: 5,
+		image: projects06,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
+	},
+	{
+		index: 6,
+		image: projects07,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
+	},
+	{
+		index: 7,
+		image: projects08,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obre realizada en 2020.",
 	},
 ];
