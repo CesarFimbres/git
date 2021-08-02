@@ -15,9 +15,9 @@ export const Navbar = () => {
 					<input className="nav-input" type="checkbox" name="menu" id="menu" />
 
 					<div class="nav-menu">
-						<a className="nav-item" href="#Services">
+						{/* <a className="nav-item" href="#Services">
 							Servicios
-						</a>
+						</a> */}
 						<a className="nav-item" href="#Enterprices">
 							Empresas
 						</a>

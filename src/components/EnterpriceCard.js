@@ -5,7 +5,7 @@ import { Enterprises } from "../assets/data";
 export const EnterpriceCard = () => {
 	return (
 		<>
-			<div className="EnterpriceCard">
+			<div id='Enterprices' className="EnterpriceCard">
 				<div className="EnterpriceCard-header">
 					<img src={Enterprises[1].image} alt={Enterprises[1].title} />
 					<span className="EnterpriceCard-number">{Enterprises[1].index}</span>

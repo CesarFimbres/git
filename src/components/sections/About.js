@@ -4,7 +4,7 @@ import { AboutData } from "../../assets/data";
 
 export const About = () => {
 	return (
-		<section className="about align w_100">
+		<section id='About' className="about align w_100">
 			<div className='about-container'>
 				<h1 className="title_section">
 					Acerca de <span>nosotros</span>

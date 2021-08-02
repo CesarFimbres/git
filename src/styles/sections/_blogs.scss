@@ -1,0 +1,150 @@
+.blog {
+	padding: 5rem 0;
+	flex-flow: column nowrap;
+	&-container {
+		align-items: center;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		width: 80%;
+	}
+}
+
+.big_blog {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+	flex-flow: column wrap;
+	&-comments {
+		display: flex;
+		flex-flow: column nowrap;
+		min-width: 300px;
+		padding: 20px;
+		z-index: 203;
+		& h3 {
+			color: lighten($sec, 15%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.8rem;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+		}
+		& p {
+			color: lighten($sec, 25%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1rem;
+			font-weight: 400;
+			margin-bottom: 1rem;
+			letter-spacing: 1px;
+		}
+		& span {
+			color: $alert;
+			font-size: 0.75rem;
+			margin-bottom: 1rem;
+		}
+		& a {
+			align-self: flex-end;
+			color: $pri;
+			font-family: 'Roboto', sans-serif;
+			font-size: 0.8rem;
+			font-weight: 600;
+			padding: 1rem;
+			transition: all 0.3s;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+				font-weight: 600;
+			}
+		}
+	}
+	&-image {
+		border-radius: 4px;
+		min-width: 320px;
+		// max-width: 1280px;
+		height: 45vh;
+		object-position: 20% 50%;
+		overflow: hidden;
+		width: 100%;
+		& img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.card_blog {
+	border: 1px solid $sec;
+	// align-items: center;
+	display: flex;
+	justify-content: center;
+	min-width: 320px;
+	max-width: 640px;
+	margin-bottom: 3rem;
+	flex-flow: column wrap;
+	width: 30%;
+	&-comments {
+		display: flex;
+		flex-flow: column nowrap;
+		min-width: 300px;
+		padding: 20px;
+		z-index: 203;
+		& h3 {
+			color: lighten($sec, 15%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.8rem;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+		}
+		& p {
+			color: lighten($sec, 25%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1rem;
+			font-weight: 400;
+			margin-bottom: 1rem;
+			letter-spacing: 1px;
+		}
+		& span {
+			color: $alert;
+			font-size: 0.75rem;
+			margin-bottom: 1rem;
+		}
+		& a {
+			align-self: flex-end;
+			color: $pri;
+			font-family: 'Roboto', sans-serif;
+			font-size: 0.8rem;
+			font-weight: 600;
+			padding: 1rem;
+			transition: all 0.3s;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+				font-weight: 600;
+			}
+		}
+	}
+	&-image {
+		border-radius: 4px;
+		min-width: 320px;
+		// max-width: 1280px;
+		height: 45vh;
+		object-position: 20% 50%;
+		overflow: hidden;
+		width: 100%;
+		& img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&-wrapper {
+		align-items: center;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+}

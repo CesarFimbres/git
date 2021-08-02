@@ -1,6 +1,13 @@
 import about01 from "./img/about_01.jpg";
 
-import bnner01 from './img/banner_01.jpg'
+import banner01 from './img/banner_01.jpg';
+
+import blog01 from './img/blog_01.jpg';
+import blog02 from './img/blog_02.jpg';
+import blog03 from './img/blog_03.jpg';
+import blog04 from './img/blog_04.jpg';
+import blog05 from './img/blog_05.jpg';
+import blog06 from './img/blog_06.jpg';
 
 import logoCsm from "./img/logo-csm.png";
 import logoEguel from "./img/logo-eguel.svg";
@@ -32,12 +39,77 @@ export const AboutData = [
 export const BannerData = [
 	{
 		index: 0,
-		image: bnner01,
+		image: banner01,
 		title: "Trabajemos juntos",
 		phone: "(52+) 55-4841-1002",
 		address: "Ciudad de México, C. P. 01210"
 	},
 ];
+
+export const BlogData = [
+	{
+		category: 'calidad energia ',
+		date: '09 Octubre, 2020',
+		index: 0,
+		intruction: '',
+		image: blog01,
+		title: "¿Qué es el Código de Red y por qué debemos cumplirlo?",
+		paragraph:
+			"Hablar de Código de Red, hoy en día es muy recurrente en el entorno eléctrico y otros ámbitos; sin embargo, aún no queda totalmente claro. Nos han dicho que debemos cumplirlo para no ser sancionados por la Comisión Reguladora de Energía (CRE) y pagar multas por miles de pesos, pero te has preguntado: ¿Qué es el Código de Red? y ¿Por qué debo cumplirlo?.",
+	},
+	{
+		category: '',
+		date: '01 Agosto, 2021',
+		index: 1,
+		intruction: '',
+		image: blog02,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obra realizada en 2020.",
+	},
+	{
+		category: '',
+		date: '01 Agosto, 2021',
+		index: 2,
+		intruction: '',
+		image: blog03,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obra realizada en 2020.",
+	},
+	{
+		category: '',
+		date: '01 Agosto, 2021',
+		index: 3,
+		intruction: '',
+		image: blog04,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obra realizada en 2020.",
+	},
+	{
+		category: '',
+		date: '01 Agosto, 2021',
+		index: 4,
+		intruction: '',
+		image: blog05,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obra realizada en 2020.",
+	},
+	{
+		category: '',
+		date: '01 Agosto, 2021',
+		index: 5,
+		intruction: '',
+		image: blog06,
+		title: "Liverpool Santa Anita",
+		paragraph:
+			"Obra realizada en 2020.",
+	},
+
+];
+
 
 export const Enterprises = [
 	{
@@ -93,55 +165,55 @@ export const ProjectsData = [
 		image: projects01,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 	{
 		index: 1,
 		image: projects02,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 	{
 		index: 2,
 		image: projects03,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 	{
 		index: 3,
 		image: projects04,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 	{
 		index: 4,
 		image: projects05,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 	{
 		index: 5,
 		image: projects06,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 	{
 		index: 6,
 		image: projects07,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 	{
 		index: 7,
 		image: projects08,
 		title: "Liverpool Santa Anita",
 		paragraph:
-			"Obre realizada en 2020.",
+			"Obra realizada en 2020.",
 	},
 ];

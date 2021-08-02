@@ -2,7 +2,7 @@
 import { ProjectsData } from '../assets/data';
 
 // import Swiper core and required modules
-import SwiperCore, { Mousewheel, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Autoplay, Mousewheel, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -12,7 +12,7 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 
 // install Swiper modules
-SwiperCore.use([Mousewheel, Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Autoplay, Mousewheel, Navigation, Pagination, Scrollbar, A11y]);
 
 export default function SwiperSlider() {
 	return (
@@ -23,6 +23,12 @@ export default function SwiperSlider() {
 			navigation
 			loop={true}
 			mousewheel={true}
+			autoplay={
+				{
+					"delay": 2500,
+					"disableOnInteraction": false
+				}
+			}
 			pagination={{ clickable: true }}
 			scrollbar={{ draggable: true }}
 			onSwiper={(swiper) => console.log(swiper)}
