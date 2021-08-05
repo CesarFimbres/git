@@ -33,6 +33,7 @@ export const AboutData = [
 		image: about01,
 		mission:
 			"Alcanzar la certificación en la fabricación y elaborazión de todos nuestros productos y servicios.",
+		missionImage: mission01,
 		title: "Grupo INTECSA",
 		paragraph:
 			"Es orgullosamente Mexicano con más de 24 años de trayectoria, es un grupo de empresas dedicado a la instalación, planeación, construcción, mantenimiento de centros comerciales y tiendas departamentales especializada en proyectos electromecánicos.",
@@ -144,16 +145,6 @@ export const Enterprises = [
 		title: "Canalización y Soportería Mexicana",
 		paragraph:
 			"Especializada en manufactura de productos metalmecánicos principalmente en aluminio, lámina galvanizada, lámina negra y latón, contamos con la tecnología de corte laser, corte water jet, punzonadora, dobladora de lámina y maquinado CNC. Ofrecemos asesoría en el diseño de piezas especiales.",
-	},
-];
-
-export const MissionData = [
-	{
-		index: 0,
-		image: mission01,
-		mission_title: "Mision",
-		paragraph:
-			"Somos una organización líder en la región reconocida por la pasión para innovar, nuestra misión es satisfacer las necesidades de nuestros clientes antes, durante y después de finalizado el proyecto, cumpliendo con la Calidad y los tiempos de entrega en una forma competitiva y creativa.",
 	},
 ];
 

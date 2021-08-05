@@ -6,7 +6,7 @@ export const Mission = () => {
 	return (
 		<section id="Mission" className="mission w_100">
 			<h1 className="title_section">
-				Nuestra <span>misión</span>
+				Nuestra <span>misión / visión</span>
 			</h1>
 
 			<div className="mission-container">
@@ -23,7 +23,7 @@ export const Mission = () => {
 					</a>
 				</div>
 				<div className="mission-image">
-					<img src={AboutData[0].image} alt={AboutData[0].title}></img>
+					<img src={AboutData[0].missionImage} alt={AboutData[0].title}></img>
 				</div>
 			</div>
 		</section>
