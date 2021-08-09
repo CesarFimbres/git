@@ -7,15 +7,20 @@ video {
 	margin-bottom: 7rem;
 	position: relative;
 	width: 100%;
+	&-content {
+		padding: 20px;
+		width: 70%;
+	}
 	&-frame {
-		content: "";
-		height: 29rem;
-		width: 19rem;
+		content: '';
+		height: 27rem;
+		width: 15rem;
 		border: 1.3rem solid $pri;
 		position: absolute;
 		z-index: 100;
 	}
 	&-overlay {
+		align-items: center;
 		background-image: linear-gradient(
 			to right,
 			rgba(0, 0, 0, 0.75) 30%,
@@ -29,22 +34,20 @@ video {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		padding-left: 8rem;
 		z-index: 100;
 	}
 	&-title {
-		color: $white;
-		font-family: "Montserrat", sans-serif;
-		font-size: 3.5rem;
-		width: 468px;
+		color: #f2f2f2;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3rem;
+		width: 425px;
 		position: relative;
-		left: 65px;
-		top: 87px;
+		padding: 35px 0 20px 35px;
 		z-index: 102;
 	}
 	&-paragraph {
 		color: $white;
-		font-family: "Montserrat", sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 1rem;
 		max-width: 500px;
 		position: relative;
@@ -53,13 +56,18 @@ video {
 		z-index: 102;
 	}
 	&-logo {
-		height: auto;
-		width: 402px;
+		padding: 0 35px;
 		position: relative;
-		top: 45px;
-		right: -12px;
-		opacity: 65%;
-		z-index: 102;
+		z-index: 103;
+		& svg {
+			height: 320px;
+			& #dark {
+				fill: #022577cc;
+			}
+			& #white {
+				fill: #ffffffd9;
+			}
+		}
 	}
 }
 

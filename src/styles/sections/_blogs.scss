@@ -148,3 +148,42 @@
 		width: 100%;
 	}
 }
+
+.logo_intecsa {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	& .content {
+		align-items: flex-start;
+		color: #022577;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		margin-left: 10px;
+		& .grupo {
+			font-size: 20px;
+			font-weight: normal;
+			letter-spacing: 33px;
+			line-height: 20px;
+			text-transform: uppercase;
+		}
+		& .intecsa {
+			font-family: 'Roboto';
+			font-size: 50px;
+			font-weight: 900;
+			letter-spacing: -1px;
+			line-height: 50px;
+			margin-top: 6px;
+			text-transform: uppercase;
+		}
+	}
+	& svg {
+		height: 68px;
+		& #dark {
+			fill: #022577;
+		}
+		& #white {
+			fill: #fff;
+		}
+	}
+}

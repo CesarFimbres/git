@@ -18,9 +18,6 @@ export const Navbar = () => {
 						{/* <a className="nav-item" href="#Services">
 							Servicios
 						</a> */}
-						<a className="nav-item" href="https://itamx.com/dashboard">
-							Tienda en linea
-						</a>
 						<a className="nav-item" href="#Enterprices">
 							Empresas
 						</a>
@@ -29,6 +26,9 @@ export const Navbar = () => {
 						</a>
 						<a className="nav-item" href="#Blog">
 							Blog
+						</a>
+						<a className="nav-item" href="https://itamx.com/dashboard">
+							Catálogo virtual
 						</a>
 					</div>
 				</div>
