@@ -8,7 +8,7 @@ import {
 
 import { AuthRouter } from './AuthRouter';
 import { BlogScreen } from '../components/pages/BlogScreen';
-import { Homepage } from '../components/pages/Homepage';
+import { HomeScreen } from '../components/pages/HomeScreen';
 
 
 export const AppRouter = () => {
@@ -30,7 +30,7 @@ export const AppRouter = () => {
 					<Route
 						exact
 						path='/'
-						component={Homepage}
+						component={HomeScreen}
 					/>
 
 					<Redirect to='/auth/login' />

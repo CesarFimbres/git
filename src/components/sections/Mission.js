@@ -14,12 +14,12 @@ export const Mission = () => {
 					<h3 className="mission-title">Misión</h3>
 					<p className="mission-paragraph">{AboutData[0].mission}</p>
 					<a href="#Leer_mas">
-						Leer más <i class="fas fa-angle-double-right"></i>{" "}
+						Leer más <i className="fas fa-angle-double-right"></i>{" "}
 					</a>
 					<h3 className="mission-title">Visión</h3>
 					<p className="mission-paragraph">{AboutData[0].vision}</p>
 					<a href="#Leer_mas">
-						Leer más <i class="fas fa-angle-double-right"></i>{" "}
+						Leer más <i className="fas fa-angle-double-right"></i>{" "}
 					</a>
 				</div>
 				<div className="mission-image">

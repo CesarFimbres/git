@@ -6,15 +6,16 @@
 	font-size: 0.75rem;
 	font-weight: 400;
 	letter-spacing: 2px;
-	margin: 0 15px;
+	margin: 5px;
 	padding: 10px 30px;
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: 0.5s;
 	&:hover {
-		background: darken($white, 15%);
+		background: lighten($pri, 50%);
 		color: $pri;
+		font-weight: 700;
 	}
 	&::after {
 		margin: -5px;
@@ -29,7 +30,7 @@
 		transition: 0.5s;
 	}
 	&:hover:after {
-		border-color: darken($white, 15%);
+		border-color: lighten($pri, 25%);
 		height: 99%;
 		width: 99%;
 	}
@@ -47,7 +48,7 @@
 		transition: 0.5s;
 	}
 	&:hover:before {
-		border-color: darken($white, 15%);
+		border-color: lighten($pri, 25%);
 		height: 99%;
 		width: 99%;
 	}
@@ -101,8 +102,9 @@
 		cursor: pointer;
 	}
 	& svg {
-		fill: darken($white, 3%);
 		align-self: center;
+		cursor: pointer;
+		fill: darken($white, 3%);
 		margin: 1.3rem;
 		position: relative;
 		right: 3px;
@@ -121,5 +123,47 @@
 		width: 150%;
 		height: 150%;
 		opacity: 0;
+	}
+}
+
+.google-btn {
+	cursor: pointer;
+	margin-top: 5px;
+	width: 100%;
+	height: 42px;
+	background-color: $google-blue;
+	border-radius: 2px;
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+
+	transition: box-shadow 0.3s ease;
+
+	.google-icon-wrapper {
+		position: absolute;
+		margin-top: 1px;
+		margin-left: 1px;
+		width: 40px;
+		height: 40px;
+		border-radius: 2px;
+		background-color: white;
+	}
+	.google-icon {
+		position: absolute;
+		margin-top: 11px;
+		margin-left: 11px;
+		width: 18px;
+		height: 18px;
+	}
+	.btn-text {
+		float: right;
+		margin: 11px 40px 0 0;
+		color: white;
+		font-size: 14px;
+		letter-spacing: 0.2px;
+	}
+	&:hover {
+		box-shadow: 0 0 6px $google-blue;
+	}
+	&:active {
+		background: $button-active-blue;
 	}
 }

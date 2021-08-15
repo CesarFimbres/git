@@ -3,17 +3,22 @@
 @import './base/base';
 
 // * CSS Components
+@import './components/auth';
 @import './components/buttons';
 @import './components/enterpriceCard';
 @import './components/modal';
 @import './components/navbar';
 @import './components/videoHero';
 
+// * CSS Pages
+@import './pages/blog';
+
 // * CSS Sections
 @import './sections/about';
 @import './sections/banner';
 @import './sections/blogs';
 @import './sections/cardWrapper';
+@import './sections/footer';
 @import './sections/hero';
 @import './sections/mission';
 @import './sections/projects';

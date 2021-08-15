@@ -1,5 +1,5 @@
 .nav {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background: $pri;
 	height: 5rem;
 	&-label,
@@ -42,8 +42,8 @@
 
 @media (max-width: 768px) {
 	body {
-		font-size: 14px;
-		margin-bottom: 10rem;
+		font-size: 12px;
+		margin-bottom: 5rem;
 	}
 	.nav {
 		bottom: 0;

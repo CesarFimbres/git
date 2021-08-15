@@ -9,16 +9,16 @@ export const Navbar = () => {
 						<img src="logo.svg" alt="Logotipo Grupo Intecsa S. A. de C. V." />
 					</div>
 
-					<label class="nav-label" for="menu">
-						<i class="nav-image fas fa-bars"></i>
+					<label className="nav-label" for="menu">
+						<i className="nav-image fas fa-bars"></i>
 					</label>
 					<input className="nav-input" type="checkbox" name="menu" id="menu" />
 
-					<div class="nav-menu">
+					<div className="nav-menu">
 						{/* <a className="nav-item" href="#Services">
 							Servicios
 						</a> */}
-						<a className="nav-item" href="#Enterprices">
+						<a className="nav-item" href="#Enterprises">
 							Empresas
 						</a>
 						<a className="nav-item" href="#About">

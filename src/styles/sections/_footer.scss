@@ -1,0 +1,160 @@
+.footer {
+	align-items: flex-start;
+	background: darken($pri, 20%);
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+	justify-content: space-evenly;
+	padding: 3rem;
+	width: 100%;
+	& h3 {
+		color: $white;
+		font-size: 1.5rem;
+		margin-bottom: 25px;
+	}
+	&-contact {
+		max-width: 320p x;
+	}
+	&-enterprice {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+	&-message {
+		color: darken($white, 15%);
+		font-weight: 100;
+		margin-top: 20px;
+		text-indent: 20px;
+		max-width: 300px;
+	}
+	&-links {
+		width: 225px;
+	}
+	&-list {
+		align-items: flex-start;
+		color: darken($white, 25%);
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 10px;
+		justify-content: center;
+		margin-bottom: 20px;
+		& a {
+			border-bottom: 1px dashed darken($white, 25%);
+		}
+		& a,
+		p {
+			color: darken($white, 25%);
+			font-weight: 100;
+			margin-bottom: 20px;
+			flex-grow: 1;
+		}
+	}
+	&-logo_intecsa {
+		align-items: center;
+		display: flex;
+		justify-content: flex-start;
+		& .content {
+			align-items: flex-start;
+			color: darken($white, 15%);
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			margin-left: 10px;
+			padding-top: 3px;
+			& .grupo {
+				font-size: 20px;
+				font-weight: normal;
+				letter-spacing: 33px;
+				line-height: 20px;
+				text-transform: uppercase;
+			}
+			& .intecsa {
+				color: $white;
+				font-family: 'Roboto';
+				font-size: 50px;
+				font-weight: 900;
+				letter-spacing: -1px;
+				line-height: 50px;
+				margin-top: 6px;
+				text-transform: uppercase;
+			}
+		}
+		& svg {
+			height: 68px;
+			& #dark {
+				fill: darken($white, 25%);
+			}
+			& #white {
+				fill: #fff;
+			}
+		}
+	}
+	&-post {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		&_data {
+			transition: 0.5s;
+			&:hover {
+				color: lighten($pri, 25%);
+				cursor: pointer;
+			}
+		}
+		&_date {
+			align-items: center;
+			background: darken($pri, 15%);
+			border-radius: 2px;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			padding: 2px 5px;
+			width: 45px;
+			& p {
+				margin-bottom: 2px;
+			}
+		}
+		&_day {
+			font-family: fantasy, tahoma, sans-serif;
+			font-size: 1.5rem;
+			line-height: 2rem;
+			font-weight: 900;
+		}
+		&_month {
+			font-size: 0.7rem;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+		&_year {
+			font-size: 0.75rem;
+			font-weight: bold;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+	}
+	&-social_networks {
+		align-items: center;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		margin-top: 20px;
+		width: 100%;
+		& a {
+			align-items: center;
+			border: 1px solid darken($white, 65%);
+			color: darken($white, 25%);
+			display: flex;
+			font-size: 1.2rem;
+			justify-content: center;
+			height: 2.25rem;
+			padding: 5px;
+			transition: 0.5s;
+			width: 2.25rem;
+			&:hover {
+				background: lighten($pri, 25%);
+				color: $white;
+			}
+		}
+	}
+}

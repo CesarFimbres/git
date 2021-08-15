@@ -14,8 +14,8 @@ import logoCsm from "./img/logo-csm.png";
 import logoEguel from "./img/logo-eguel.svg";
 import logoIta from "./img/logo-ita.svg";
 import logoIte from "./img/logo-ite.svg";
-import logoGit from "./img/logo-git.svg";
-import logoGrupo from './img/logo-grupo_intecsa.svg'
+// import logoGit from "./img/logo-git.svg";
+// import logoGrupo from './img/logo-grupo_intecsa.svg'
 
 import mission01 from "./img/misison_01.jpg";
 
@@ -112,14 +112,16 @@ export const BlogData = [
 ];
 
 export const Enterprises = [
-	{
-		index: 0,
-		image: logoGit,
-		imageText: logoGrupo,
-		title: "Grupo INTECSA S. A. de C. V.",
-		paragraph:
-			"GRUPO INTECSA® orgullosamente Mexicano con más de 24 años de trayectoria, es un grupo de empresas dedicado a la instalación, planeación, construcción y mantenimiento de centros comerciales y tiendas departamentales especializada en proyectos electromecánicos. Gracias a nuestra dedicación y empeño hemos traspasado fronteras, logrando consolidar proyectos en varios países de América latina como: Guatemala, Honduras, El Salvador y República Dominicana, logrando el reconocimiento de nuestros clientes y socios comerciales.",
-	},
+	/*
+		{
+			index: 0,
+			image: logoGit,
+			imageText: logoGrupo,
+			title: "Grupo INTECSA S. A. de C. V.",
+			paragraph:
+				"GRUPO INTECSA® orgullosamente Mexicano con más de 24 años de trayectoria, es un grupo de empresas dedicado a la instalación, planeación, construcción y mantenimiento de centros comerciales y tiendas departamentales especializada en proyectos electromecánicos. Gracias a nuestra dedicación y empeño hemos traspasado fronteras, logrando consolidar proyectos en varios países de América latina como: Guatemala, Honduras, El Salvador y República Dominicana, logrando el reconocimiento de nuestros clientes y socios comerciales.",
+		},
+	*/
 	{
 		index: 1,
 		image: logoIte,

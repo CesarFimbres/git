@@ -5,6 +5,7 @@ video {
 .videoHero {
 	height: 90vh;
 	margin-bottom: 7rem;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 	&-content {
@@ -69,12 +70,4 @@ video {
 			}
 		}
 	}
-}
-
-button {
-	height: 35px;
-	width: 150px;
-	z-index: 102;
-	left: 65px;
-	top: 65px;
 }
