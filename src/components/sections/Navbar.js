@@ -9,7 +9,7 @@ export const Navbar = () => {
 						<img src="logo.svg" alt="Logotipo Grupo Intecsa S. A. de C. V." />
 					</div>
 
-					<label className="nav-label" for="menu">
+					<label className="nav-label" htmlFor="menu">
 						<i className="nav-image fas fa-bars"></i>
 					</label>
 					<input className="nav-input" type="checkbox" name="menu" id="menu" />

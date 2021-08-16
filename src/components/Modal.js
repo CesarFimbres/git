@@ -23,7 +23,7 @@ export const Modal = ({
 								<h3>{title}</h3>
 							</ModalHeader>
 						}
-						<ButtonClose><i class="fas fa-times"></i></ButtonClose>
+						<ButtonClose><i className="fas fa-times"></i></ButtonClose>
 
 						{children}
 

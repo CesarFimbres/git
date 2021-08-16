@@ -1,24 +1,14 @@
-// import { Homepage } from "./components/pages/Homepage";
+import React from 'react'
+import { Provider } from 'react-redux'
 
 import { AppRouter } from "./routers/AppRouter";
+import { store } from './store/stroe';
 
 function App() {
   return (
-    <AppRouter />
-    /* 
-      <div className="App">
-          <Homepage />
-          <Menu />
-          <Hero />
-          <About />
-          <Mission />
-          <Services />
-          <Banner />
-          <Projects />
-          <Blogs />
-          <Footer />
-      </div>
-    */
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
   );
 }
 

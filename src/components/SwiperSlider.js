@@ -37,7 +37,7 @@ export default function SwiperSlider() {
 		>
 
 			{ProjectsData.map((slideContent, index) => (
-				<SwiperSlide key={slideContent} virtualIndex={index}>
+				<SwiperSlide key={slideContent.index} virtualIndex={index}>
 					<div className='projects-swiperslider'>
 						<img src={slideContent.image} alt={slideContent.title} loading="lazy" />
 					</div>

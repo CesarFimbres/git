@@ -19,7 +19,7 @@ export const EnterpriseCards = () => {
 						<h3 className="EnterpriceCard-title">{Enterprise.title}</h3>
 						<p className="EnterpriceCard-paragraph">{Enterprise.paragraph}</p>
 						<a href="#Leer_mas">
-							Leer más<i class="fas fa-angle-double-right"></i>
+							Leer más<i className="fas fa-angle-double-right"></i>
 						</a>
 					</div>
 
