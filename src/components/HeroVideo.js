@@ -20,7 +20,6 @@ export const HeroVideo = () => {
 					mojarte, es aprender a bailar bajo la lluvia.
 				</p> */}
 					<div className="videoHero-logo">
-
 						<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
 							<g id="logo_git">
 								<g id="dark">

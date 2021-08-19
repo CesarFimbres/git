@@ -1,13 +1,14 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import validator from 'validator';
+
 import { useForm } from '../../hooks/useForm';
+import { removeError, setError } from '../../actions/ui';
 import { startLoginEmailPassword, startGoogleLogin, } from '../../actions/auth';
 
 export const LoginScreen = () => {
 
-	const dispatch = useDispatch();
 
 	const [formValues, handleInputChange] = useForm({
 		email: 'fifi@gmail.com',
@@ -17,12 +18,36 @@ export const LoginScreen = () => {
 
 	const handleLogin = (e) => {
 		e.preventDefault();
-		dispatch(startLoginEmailPassword(email, password));
+
+		if (isFormValid()) {
+			dispatch(startLoginEmailPassword(email, password));
+		}
 	}
+
+	const dispatch = useDispatch();
+	const { msgError, loading } = useSelector(state => state.ui);
+
+	const isFormValid = () => {
+
+		if (!validator.isEmail(email)) {
+			dispatch(setError('Email is not valid'));
+			return false;
+		}
+
+		if (password.length < 6) {
+			dispatch(setError('Password showld be at lease 6 characters'));
+			return false;
+		}
+
+		dispatch(removeError());
+		return true
+	}
+
 
 	const handleGoogleLogin = (params) => {
 		dispatch(startGoogleLogin());
 	}
+
 
 	return (
 		<div className='auth'>
@@ -30,6 +55,13 @@ export const LoginScreen = () => {
 
 			TODO: Logotipo de intexa a la izquierda
 			<form onSubmit={handleLogin}>
+
+				{msgError &&
+					<div className='auth-alert_error'>
+						{msgError}
+					</div>
+				}
+
 				<input className='auth-input'
 					autoComplete='off'
 					name='email'
@@ -50,9 +82,9 @@ export const LoginScreen = () => {
 					className='btn_frame'
 					onClick={handleLogin}
 					type='submit'
-
+					disabled={loading}
 				>
-					Login
+					Iniciar sesión
 				</button>
 
 				<hr />

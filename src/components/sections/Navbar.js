@@ -1,6 +1,18 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+
+import { startLogout } from "../../actions/auth";
+
 
 export const Navbar = () => {
+
+	const dispatch = useDispatch();
+
+	const handleLogout = () => {
+		dispatch(startLogout());
+	}
+
+
 	return (
 		<header className="w_100">
 			<nav className="nav align">
@@ -29,6 +41,13 @@ export const Navbar = () => {
 						</a>
 						<a className="nav-item" href="https://itamx.com/dashboard">
 							Catálogo virtual
+						</a>
+						<a
+							className="nav-item"
+							href='#Logout'
+							onClick={handleLogout}
+							title='Logout'>
+							<i className="fas fa-sign-out-alt"></i>
 						</a>
 					</div>
 				</div>

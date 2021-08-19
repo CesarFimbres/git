@@ -2,7 +2,7 @@ import React from "react";
 
 import { BlogData } from '../../assets/data'
 
-export const Blog = () => {
+export const LandingBlog = () => {
 	return (
 		<section id="Blog" className="blog align w_100">
 			<h1 className="title_section">

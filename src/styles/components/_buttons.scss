@@ -12,9 +12,14 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: 0.5s;
+	&:disabled {
+		background: lighten($sec, 20%);
+		color: $sec;
+	}
 	&:hover {
 		background: lighten($pri, 50%);
 		color: $pri;
+		cursor: pointer;
 		font-weight: 700;
 	}
 	&::after {

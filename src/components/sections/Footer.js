@@ -45,7 +45,7 @@ export const Footer = () => {
 						<p className='intecsa'>intecsa</p>
 					</div>
 				</div>
-				<p className='footer-message'>A nuestros socios comerciales, clientes y amigos les agradecemos por permanecer juntos en epocas difiles, esto nos hace más fuertes, nos consolida como un grupo de cara al futuro, tomando conciencia de los tiempos.</p>
+				<p className='footer-message'>A nuestros socios comerciales, clientes y amigos les agradecemos por permanecer juntos en épocas difíciles, esto nos hace más fuertes, nos consolida como un grupo de cara al futuro, tomando conciencia de los tiempos.</p>
 
 				<div className='footer-social_networks'>
 

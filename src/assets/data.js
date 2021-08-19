@@ -3,6 +3,7 @@ import aboutCurruculumVitea from "./doc/CV_GrupoIntecsa.pdf";
 
 import banner01 from "./img/banner_01.jpg";
 
+import blog00 from "./img/blog_00.jpg";
 import blog01 from "./img/blog_01.jpg";
 import blog02 from "./img/blog_02.jpg";
 import blog03 from "./img/blog_03.jpg";
@@ -56,8 +57,16 @@ export const BannerData = [
 export const BlogData = [
 	{
 		category: "calidad energia ",
-		date: "09 Octubre, 2020",
 		index: 0,
+		image: blog00,
+		title: "¿Qué es el Código de Red y por qué debemos cumplirlo?",
+		paragraph:
+			"Algún mensaje de texto inspiracional que luzca lindo en página.",
+	},
+	{
+		category: "calidad energia ",
+		date: "09 Octubre, 2020",
+		index: 1,
 		intruction: "",
 		image: blog01,
 		title: "¿Qué es el Código de Red y por qué debemos cumplirlo?",
@@ -67,7 +76,7 @@ export const BlogData = [
 	{
 		category: "construcción",
 		date: "01 Agosto, 2021",
-		index: 1,
+		index: 2,
 		intruction: "",
 		image: blog02,
 		title: "Liverpool Santa Anita",
@@ -76,7 +85,7 @@ export const BlogData = [
 	{
 		category: "diseño",
 		date: "01 Agosto, 2021",
-		index: 2,
+		index: 3,
 		intruction: "",
 		image: blog03,
 		title: "Liverpool Santa Anita",
@@ -85,7 +94,7 @@ export const BlogData = [
 	{
 		category: "instalaciones",
 		date: "01 Agosto, 2021",
-		index: 3,
+		index: 4,
 		intruction: "",
 		image: blog04,
 		title: "Liverpool Santa Anita",
@@ -94,7 +103,7 @@ export const BlogData = [
 	{
 		category: "",
 		date: "01 Agosto, 2021",
-		index: 4,
+		index: 5,
 		intruction: "",
 		image: blog05,
 		title: "Liverpool Santa Anita",
@@ -103,7 +112,7 @@ export const BlogData = [
 	{
 		category: "",
 		date: "01 Agosto, 2021",
-		index: 5,
+		index: 6,
 		intruction: "",
 		image: blog06,
 		title: "Liverpool Santa Anita",
