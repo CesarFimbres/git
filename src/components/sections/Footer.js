@@ -3,7 +3,7 @@ import React from "react";
 export const Footer = () => {
 	return (
 		<section id="Footer" className="footer">
-			<div className='footer-enterprice'>
+			<div className='footer-enterprise'>
 
 				<div className='footer-logo_intecsa'>
 					<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ export const Footer = () => {
 								<path id="g" d="M62.5467 17.1134L62.5307 54.8091C62.8354 59.9598 62.0913 63.2776 59.8738 66.9898C55.251 73.5675 48.2484 74.6618 38.6928 74.6026C32.3172 74.6618 27.9388 73.3483 24.9412 71.8999C17.5313 67.2183 19.1293 58.9456 19.1293 58.9456L34.3583 60.667C34.7679 63.1468 36.5404 64.5534 40.1699 64.7971C43.2864 64.6288 44.0175 63.8387 44.843 63.2257C46.1521 62.0701 46.7628 59.7215 46.7628 56.2706V50.4461C43.3453 54.7233 39.1291 56.1202 35.7625 56.2709C30.3181 56.5146 26.128 55.1373 22.3243 50.6784C19.2296 47.0732 17.8192 42.7436 17.5509 37.2804C17.2826 31.8171 18.3097 25.1356 22.3189 20.9791C25.6592 17.5054 29.5952 16.1211 34.9892 16.1211C40.4315 16.4747 43.9007 17.6895 47.8507 23.1558V17.1048L62.5467 17.1134ZM40.0443 27.5624C33.0833 27.4818 33.3617 34.8793 33.2061 36.3409C33.0993 39.5183 33.6054 45.4096 39.9109 45.721C44.7024 45.5065 46.6359 41.6392 46.8218 38.1811C47.1503 33.3162 45.8451 28.2244 40.0443 27.5624Z" />
 								<path id="i" d="M64.7231 56.4702V45.7319H80.3529V56.4702H64.7231ZM64.7231 102.108V60.8629H80.3529V102.107L64.7231 102.108Z" />
 								<path id="t" d="M99.1525 77.8268C96.8458 77.8268 94.032 77.3875 92.2176 76.488C90.1996 75.4379 88.7814 74.0601 87.9102 72.1036C87.2855 70.6426 86.6016 69.1448 86.4129 63.0951L86.4254 47.4844L80.6988 47.5015L80.7246 36.1054H86.4204V28.5784L102.204 20.4666L102.207 36.0581H110.805V47.4819L102.207 47.485L102.204 52.2015C102.204 54.4759 102.211 59.2747 102.211 60.2529C102.314 62.8289 101.47 66.8474 105.482 66.8148C107.234 66.6486 107.513 66.5649 110.195 65.7764L111.337 76.5573C109.326 77.0032 107.293 77.3387 105.245 77.5622C103.222 77.782 101.187 77.8704 99.1525 77.8268Z" />
-								<g id="registred trand">
+								<g id="trademark">
 									<g id="Ellipse 1">
 										<path id="Vector (Stroke)" fillRule="evenodd" clipRule="evenodd" d="M116.235 68.6192C114.489 68.6192 113.074 70.0345 113.074 71.7803C113.074 73.5262 114.489 74.9414 116.235 74.9414C117.981 74.9414 119.396 73.5262 119.396 71.7803C119.396 70.0345 117.981 68.6192 116.235 68.6192ZM112.17 71.7803C112.17 69.5351 113.99 67.715 116.235 67.715C118.48 67.715 120.3 69.5351 120.3 71.7803C120.3 74.0255 118.48 75.8456 116.235 75.8456C113.99 75.8456 112.17 74.0255 112.17 71.7803Z" />
 									</g>
@@ -78,7 +78,7 @@ export const Footer = () => {
 					<a href="https://www.instagram.com/grupointecsamx/?hl=es-la"
 						target="_blank"
 						rel="noopener follow noreferrer"
-						aria-label="Sígenos en instagram">
+						aria-label="Síguenos en instagram">
 						<i className="fab fa-instagram"></i>
 					</a>
 
@@ -97,9 +97,9 @@ export const Footer = () => {
 				<div className='footer-list'>
 					<i className="fas fa-map-marker-alt"></i>
 					<p >
-						Calle Raúl Zarate Machuca No.11, <br />
+						Calle Raúl Zárate Machuca No.11, <br />
 						Colonia Cuevitas, C. P.01220, <br />
-						Ciudad de México, CDMX
+						Ciudad de México, CDMX.
 					</p>
 				</div>
 
@@ -160,7 +160,7 @@ export const Footer = () => {
 						<p className='footer-post_year'>2021</p>
 					</div>
 					<div className='footer-post_data'>
-						<h4>5 Ventajas de usar electroductos</h4>
+						<h4>5 Ventajas de usar Electroducto</h4>
 						<p>
 							<i className="fas fa-user-tie"> </i> Admin -
 							<i className="fas fa-comments"> 13</i>

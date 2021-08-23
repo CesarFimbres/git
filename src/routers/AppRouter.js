@@ -8,9 +8,12 @@ import {
 import { useDispatch } from 'react-redux'
 
 
-import { AuthRouter } from './AuthRouter';
-import { BlogScreen } from '../components/pages/BlogScreen';
 import { firebase } from '../firebase/firebaseConfig';
+import { AuthRouter } from './AuthRouter';
+import { PrivateRoute } from './PrivateRoute';
+import { PublicRoute } from './PublicRoute';
+
+import { BlogScreen } from '../components/pages/blogs/BlogScreen';
 import { HomeScreen } from '../components/pages/HomeScreen';
 import { Loading } from '../components/sections/Loading'
 import { login } from '../actions/auth';
@@ -20,7 +23,7 @@ export const AppRouter = () => {
 
 	const dispatch = useDispatch();
 
-	// * Checking if user is loged in  or not 
+	// * Checking if user is logged in  or not 
 	const [checking, setChecking] = useState(true);
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -55,12 +58,15 @@ export const AppRouter = () => {
 			<div>
 				<Switch>
 
-					<Route
+					<PublicRoute
 						path='/auth'
 						component={AuthRouter}
+						isAuthenticated={isLoggedIn}
 					/>
 
-					<Route
+					<PrivateRoute
+						exact
+						isAuthenticated={isLoggedIn}
 						path='/blog'
 						component={BlogScreen}
 					/>

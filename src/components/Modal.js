@@ -32,21 +32,12 @@ export const Modal = ({
 			}
 		</>
 
-
-		/* 		<div className='modal'>
-					<div className='modal-frame'>
-						<h1>
-							Aqui va el video tipo modal
-						</h1>
-					</div>
-				</div>
-		*/
 	)
 }
 
 // * This is the style component section
 const Overlay = styled.div`
-	background: ${props => props.showOverlay ? 'rgba(35, 84, 138, 0.75)' : 'tranparent'};
+	background: ${props => props.showOverlay ? 'rgba(35, 84, 138, 0.75)' : 'transparent'};
 	height: 100vh;
 	left: 0;
 	padding: 40px;
@@ -104,7 +95,6 @@ const ButtonClose = styled.button`
 	}
 	i{
 		font-size: 1.3rem;
-
 	}
 
 `;

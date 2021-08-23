@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player/lazy';
 
 import { AboutData } from "../../assets/data";
 import { Modal } from "../Modal";

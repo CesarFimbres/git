@@ -1,11 +1,3 @@
-/* 
-{
-	uid:'dfbgkjwtgWDrftkojklxdfcju',
-	name:'Fifi'
-}
-
- */
-
 import { types } from "../types/types";
 
 

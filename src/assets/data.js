@@ -1,5 +1,5 @@
 import about01 from "./img/about_01.jpg";
-import aboutCurruculumVitea from "./doc/CV_GrupoIntecsa.pdf";
+import aboutCurriculumVitae from "./doc/CV_GrupoIntecsa.pdf";
 
 import banner01 from "./img/banner_01.jpg";
 
@@ -34,12 +34,12 @@ export const AboutData = [
 		index: 0,
 		image: about01,
 		mission:
-			"Alcanzar la certificación en la fabricación y elaborazión de todos nuestros productos y servicios.",
+			"Alcanzar la certificación en la fabricación y elaboración de todos nuestros productos y servicios.",
 		missionImage: mission01,
 		title: "Grupo INTECSA",
 		paragraph:
 			"Es orgullosamente Mexicano con más de 24 años de trayectoria, es un grupo de empresas dedicado a la instalación, planeación, construcción, mantenimiento de centros comerciales y tiendas departamentales especializada en proyectos electromecánicos.",
-		pdf: aboutCurruculumVitea,
+		pdf: aboutCurriculumVitae,
 		vision: "Consolidarnos como una empresa globalizada con una participación en el mercado internacional.",
 	},
 ];
@@ -56,18 +56,18 @@ export const BannerData = [
 
 export const BlogData = [
 	{
-		category: "calidad energia ",
+		category: " energía ",
 		index: 0,
 		image: blog00,
-		title: "¿Qué es el Código de Red y por qué debemos cumplirlo?",
+		title: "Grupo Intecsa S. A. de C. V.?",
 		paragraph:
-			"Algún mensaje de texto inspiracional que luzca lindo en página.",
+			"--",
 	},
 	{
-		category: "calidad energia ",
+		category: "energía",
 		date: "09 Octubre, 2020",
 		index: 1,
-		intruction: "",
+		intro: "",
 		image: blog01,
 		title: "¿Qué es el Código de Red y por qué debemos cumplirlo?",
 		paragraph:
@@ -77,16 +77,16 @@ export const BlogData = [
 		category: "construcción",
 		date: "01 Agosto, 2021",
 		index: 2,
-		intruction: "",
+		intro: "",
 		image: blog02,
-		title: "Liverpool Santa Anita",
-		paragraph: "Obra realizada en 2020.",
+		title: "Tipos de cimientos para construcción",
+		paragraph: "Al construir o ampliar nuestro hogar es importante tener la asesoría de un especialista en arquitectura o ingeniería civil, con el fin de evitar uno de los errores más frecuentes, el cual radica en la cimentación, que es la base de toda la obra y le dará seguridad especialmente en las zonas sísmicas como la Ciudad de México. 	El tipo de cimentación se elegirá con base en factores como el suelo, el tamaño y peso aproximado de la construcción, además de la instalación hidráulica y la correcta distribución del terreno para tener el espacio suficiente para la obra. La elección adecuada del tipo de cimientos se verá reflejada en la estructura, de lo contrario pueden tenerse problemas a mediano o largo plazo, que van desde cuarteaduras hasta hundimientos y caídas de muros.",
 	},
 	{
 		category: "diseño",
 		date: "01 Agosto, 2021",
 		index: 3,
-		intruction: "",
+		intro: "",
 		image: blog03,
 		title: "Liverpool Santa Anita",
 		paragraph: "Obra realizada en 2020.",
@@ -95,7 +95,7 @@ export const BlogData = [
 		category: "instalaciones",
 		date: "01 Agosto, 2021",
 		index: 4,
-		intruction: "",
+		intro: "",
 		image: blog04,
 		title: "Liverpool Santa Anita",
 		paragraph: "Obra realizada en 2020.",
@@ -104,7 +104,7 @@ export const BlogData = [
 		category: "",
 		date: "01 Agosto, 2021",
 		index: 5,
-		intruction: "",
+		intro: "",
 		image: blog05,
 		title: "Liverpool Santa Anita",
 		paragraph: "Obra realizada en 2020.",
@@ -113,7 +113,7 @@ export const BlogData = [
 		category: "",
 		date: "01 Agosto, 2021",
 		index: 6,
-		intruction: "",
+		intro: "",
 		image: blog06,
 		title: "Liverpool Santa Anita",
 		paragraph: "Obra realizada en 2020.",
@@ -141,14 +141,14 @@ export const Enterprises = [
 	{
 		index: 2,
 		image: logoIta,
-		title: "Instalaciones Técnologicas Aplicadas",
+		title: "Instalaciones Tecnológicas Aplicadas",
 		paragraph:
-			"Empresa con más de 15 años de experiencia ofrece soluciones en electricidad, diseño de proyectos, levantamientos, asesorías técnicas, mediciones para estudios de calidad en la energía, integración de equipos eléctricos en baja y media tensión especialistas en CODIGO DE RED.",
+			"Empresa con más de 15 años de experiencia ofrece soluciones en electricidad, diseño de proyectos, levantamientos, asesorías técnicas, mediciones para estudios de calidad en la energía, integración de equipos eléctricos en baja y media tensión especialistas en CÓDIGO DE RED.",
 	},
 	{
 		index: 3,
 		image: logoEguel,
-		title: "Inmobiliara Eguel",
+		title: "Inmobiliaria Eguel",
 		paragraph:
 			"Empresa radicada en Ciudad de México con 21 años de trayectoria, pone a sus órdenes los servicios de renta de andamios para construcción, torres de iluminación provisional, tableros eléctricos provisionales, grúa de gama alta tipo Hiab, atendemos necesidades de movilidad mediante la prestación de servicios de fletes y maniobra.",
 	},
@@ -157,7 +157,7 @@ export const Enterprises = [
 		image: logoCsm,
 		title: "Canalización y Soportería Mexicana",
 		paragraph:
-			"Especializada en manufactura de productos metalmecánicos principalmente en aluminio, lámina galvanizada, lámina negra y latón, contamos con la tecnología de corte laser, corte water jet, punzonadora, dobladora de lámina y maquinado CNC. Ofrecemos asesoría en el diseño de piezas especiales.",
+			"Especializada en manufactura de productos metal-mecánicos principalmente en aluminio, lámina galvanizada, lámina negra y latón, contamos con la tecnología de corte láser, corte water jet, punzonadora, dobladora de lámina y maquinado CNC. Ofrecemos asesoría en el diseño de piezas especiales.",
 	},
 ];
 
