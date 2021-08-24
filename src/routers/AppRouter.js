@@ -17,6 +17,7 @@ import { BlogScreen } from '../components/pages/blogs/BlogScreen';
 import { HomeScreen } from '../components/pages/HomeScreen';
 import { Loading } from '../components/sections/Loading'
 import { login } from '../actions/auth';
+import { startLoadingBlogs } from '../actions/blogs';
 
 
 export const AppRouter = () => {
@@ -30,10 +31,13 @@ export const AppRouter = () => {
 
 	//* Getting user login data from firebase, when not logged return user=null
 	useEffect(() => {
-		firebase.auth().onAuthStateChanged((user) => {
+		firebase.auth().onAuthStateChanged(async (user) => {
 			if (user?.uid) {
 				dispatch(login(user.uid, user.displayName));
 				setIsLoggedIn(true);
+
+				dispatch(startLoadingBlogs(user.uid));
+
 			} else {
 				setIsLoggedIn(false);
 			}

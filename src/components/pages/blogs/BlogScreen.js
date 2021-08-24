@@ -42,11 +42,7 @@ export const BlogScreen = () => {
 				asi se simplifica el proceso de codificación
 			*/}
 
-			{
-				(active)
-					? <NothingSelected />
-					: (<h3>Crear sección para generar un nuevo blog</h3>)
-			}
+
 
 
 			<div className='blog_screen-container'>
@@ -82,7 +78,13 @@ export const BlogScreen = () => {
 
 					</div>
 
-					<NotesScreen />
+					{
+						(active)
+							? (<NotesScreen />)
+							: (<NothingSelected />)
+					}
+
+					{/* <NotesScreen /> */}
 				</main>
 
 				<BlogAside />

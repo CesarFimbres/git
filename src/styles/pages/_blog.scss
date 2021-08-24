@@ -245,7 +245,8 @@
 		padding: 5px;
 	}
 	&-picture {
-		object-fit: cover;
+		object-fit: contain;
+		align-self: baseline;
 		width: 75px;
 	}
 	&-title {

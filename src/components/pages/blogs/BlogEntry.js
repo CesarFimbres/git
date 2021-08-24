@@ -1,13 +1,13 @@
 import React from 'react'
 
-export const BlogEntry = ({ value }) => {
+export const BlogEntry = ({ author, body, category, date, id, imageUrl, intro, title }) => {
 	return (
 		<div className='blog_entry' >
 
 			<img
 				className='blog_entry-picture'
-				src='https://m.media-amazon.com/images/I/61tK2HtjkxL._AC_.jpg'
-				alt='Osito teddy' loading='lazy'
+				src={imageUrl}
+				alt={title} loading='lazy'
 			/>
 
 			{/*
@@ -22,11 +22,10 @@ export const BlogEntry = ({ value }) => {
 
 			<div className='blog_entry-body' >
 				<p className='blog_entry-title'>
-					{value} - Un nuevo dia.
+					{title}
 				</p>
 				<p className='blog_entry-content'>
-					Un nuevo dia siempre trae una oportunidad para comenzar de nuevo.
-					ok eso es buena señal, voy a regresar los cambios
+					{body}
 				</p>
 			</div>
 
