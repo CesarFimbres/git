@@ -1,24 +1,41 @@
-import React from 'react'
+import React from 'react';
+import moment from 'moment';
+import 'moment/locale/es-mx';
+import { useDispatch } from 'react-redux';
+import { activeBlog } from '../../../actions/blogs';
+
+moment.locale('es-mx');         // es-mx
 
 export const BlogEntry = ({ author, body, category, date, id, imageUrl, intro, title }) => {
+
+	const blogDate = moment(date);
+	const dispatch = useDispatch();
+
+	const handleEntryClick = () => {
+		dispatch(activeBlog(id, {
+			author,
+			body,
+			category,
+			date,
+			imageUrl,
+			intro,
+			title,
+		})
+		)
+	}
+
+
 	return (
-		<div className='blog_entry' >
+		<div
+			className='blog_entry'
+			onClick={handleEntryClick}
+		>
 
 			<img
 				className='blog_entry-picture'
 				src={imageUrl}
 				alt={title} loading='lazy'
 			/>
-
-			{/*
-			<div
-				className='blog_entry-picture'
-				style={{
-					backgroundSize: 'cover',
-					backgroundImage: 'url(https://m.media-amazon.com/images/I/61tK2HtjkxL._AC_.jpg)',
-				}}
-			></div> 
-			*/}
 
 			<div className='blog_entry-body' >
 				<p className='blog_entry-title'>
@@ -30,8 +47,8 @@ export const BlogEntry = ({ author, body, category, date, id, imageUrl, intro, t
 			</div>
 
 			<div className='blog_entry-date' >
-				<span>Lunes</span>
-				<h4>28</h4>
+				<span>{blogDate.format('dddd')}</span>
+				<h4>{blogDate.format('D')}</h4>
 			</div>
 		</div>
 	)

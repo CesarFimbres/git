@@ -1,3 +1,6 @@
+
+// * Process to upload data to Firestore 
+
 import { db } from "../firebase/firebaseConfig"
 
 export const loadBlogs = async (uid) => {
@@ -13,9 +16,6 @@ export const loadBlogs = async (uid) => {
 			...snapChild.data()
 		})
 	});
-
-	// * This list an array with id blog and data
-	// console.log(blogs);
 
 	return blogs;
 }

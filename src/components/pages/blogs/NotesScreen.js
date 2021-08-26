@@ -1,7 +1,31 @@
-import React from 'react'
+import { useEffect, useRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux'
+import { activeBlog } from '../../../actions/blogs';
+import { useForm } from '../../../hooks/useForm';
+
 import { NotesAppBar } from './NotesAppBar'
 
 export const NotesScreen = () => {
+
+	const { active: blogActiveNote } = useSelector(state => state.blogs);
+	const [formValues, handleInputChange, reset] = useForm(blogActiveNote);
+	const { body, title } = formValues;
+
+	const activeId = useRef(blogActiveNote.id);
+
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		if (blogActiveNote.id !== activeId.current) {
+			reset(blogActiveNote);
+			activeId.current = blogActiveNote.id
+		}
+	}, [blogActiveNote, reset])
+
+	useEffect(() => {
+		dispatch(activeBlog(formValues.id, { ...formValues }));
+	}, [formValues, dispatch])
+
 	return (
 		<div className='notes-main'>
 
@@ -10,21 +34,30 @@ export const NotesScreen = () => {
 			<div className='notes-content' >
 				<input
 					className='notes-title_input'
+					name='title'
 					placeholder='Titulo del blog'
 					type='text'
+					value={title}
+					onChange={handleInputChange}
 				/>
 
 				<textarea
 					className='notes-textarea'
+					name='body'
 					placeholder='Contenido del blog'
+					value={body}
+					onChange={handleInputChange}
 				/>
 
-				<div className='notes-image' >
-					<img
-						src='https://img.chilango.com/2014/05/de-noche-todos-los-gatos-son-pardos.jpg'
-						alt='México de noche'
-					/>
-				</div>
+				{
+					blogActiveNote.imageUrl &&
+					<div className='notes-image' >
+						<img
+							src={blogActiveNote.imageUrl}
+							alt={blogActiveNote.title}
+						/>
+					</div>
+				}
 
 			</div>
 
