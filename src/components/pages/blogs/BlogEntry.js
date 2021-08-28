@@ -27,7 +27,7 @@ export const BlogEntry = ({ author, body, category, date, id, imageUrl, intro, t
 
 	return (
 		<div
-			className='blog_entry'
+			className='blog_entry animate__animated animate__fadeInLeft animate__faster'
 			onClick={handleEntryClick}
 		>
 

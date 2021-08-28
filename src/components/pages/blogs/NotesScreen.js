@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { activeBlog } from '../../../actions/blogs';
+import { activeBlog, startDeleting } from '../../../actions/blogs';
 import { useForm } from '../../../hooks/useForm';
 
 import { NotesAppBar } from './NotesAppBar'
@@ -25,6 +25,13 @@ export const NotesScreen = () => {
 	useEffect(() => {
 		dispatch(activeBlog(formValues.id, { ...formValues }));
 	}, [formValues, dispatch])
+
+	const handleDelete = () => {
+
+		dispatch(startDeleting(blogActiveNote.id));
+
+	}
+
 
 	return (
 		<div className='notes-main'>
@@ -60,6 +67,13 @@ export const NotesScreen = () => {
 				}
 
 			</div>
+
+			<button
+				className='btn_frame'
+				onClick={handleDelete}
+			>
+				Eliminar
+			</button>
 
 		</div>
 	)

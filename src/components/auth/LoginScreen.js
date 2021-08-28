@@ -11,7 +11,7 @@ export const LoginScreen = () => {
 
 
 	const [formValues, handleInputChange] = useForm({
-		email: 'fifi@gmail.com',
+		email: 'anna@gmail.com',
 		password: '123456'
 	})
 	const { email, password } = formValues;
@@ -35,7 +35,7 @@ export const LoginScreen = () => {
 		}
 
 		if (password.length < 6) {
-			dispatch(setError('Password showld be at lease 6 characters'));
+			dispatch(setError('Password should be at lease 6 characters'));
 			return false;
 		}
 
@@ -53,8 +53,10 @@ export const LoginScreen = () => {
 		<div className='auth'>
 			<h3 className='auth-title'>Login</h3>
 
-			TODO: Logotipo de intexa a la izquierda
-			<form onSubmit={handleLogin}>
+			<form
+				onSubmit={handleLogin}
+				className='animate__animated animate__fadeIn animate__faster'
+			>
 
 				{msgError &&
 					<div className='auth-alert_error'>

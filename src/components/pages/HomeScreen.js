@@ -15,7 +15,10 @@ import { Projects } from "../sections/Projects";
 export const HomeScreen = () => {
 
 	return (
-		<main>
+		<main
+			className='animate__animated animate__fadeIn'
+
+		>
 			<Navbar />
 
 			<Hero />

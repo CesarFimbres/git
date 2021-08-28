@@ -1,6 +1,7 @@
 import { types } from '../types/types';
 import { firebase, googleAuthProvider } from '../firebase/firebaseConfig';
 import { uiFinishLoading, uiStartLoading } from './ui';
+import { blogLogout } from './blogs';
 
 
 export const startGoogleLogin = () => {
@@ -75,6 +76,7 @@ export const startLogout = () => {
 
 		await firebase.auth().signOut();
 		dispatch(logout());
+		dispatch(blogLogout());
 
 	}
 }

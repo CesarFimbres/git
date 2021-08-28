@@ -58,8 +58,10 @@ export const RegisterScreen = () => {
 		<div className='auth'>
 			<h3 className='auth-title'>Registro</h3>
 
-			TODO: Logotipo de intexa a la derecha
-			<form onSubmit={handleRegister}>
+			<form
+				onSubmit={handleRegister}
+				className='animate__animated animate__fadeIn animate__faster'
+			>
 
 				{msgError &&
 					<div className='auth-alert_error'>

@@ -24,8 +24,11 @@ export const startNewBlog = () => {
 		// * Save blog to FireStore DB depending user ID
 		const docRef = await db.collection(`${uid}/git/blogs`).add(newBlog);
 
-		// * Send the estructure of data blog to the store and after be saved into Firestore DB
+		// * Send the estructure of data blog to the store to  be saved into Firestore DB
 		dispatch(activeBlog(docRef.id, newBlog));
+
+		// * Insert the info into store and display a new entry note y the sideBar 
+		dispatch(addNewBlog(docRef.id, newBlog));
 
 		/*  Get and show the complete store state
 		const state = getState();
@@ -41,6 +44,15 @@ export const activeBlog = (id, note) => ({
 		...note
 	}
 });
+
+export const addNewBlog = (id, note) => ({
+	type: types.blogsAddNew,
+	payload: {
+		id,
+		...note,
+	}
+})
+
 
 
 export const startLoadingBlogs = (uid) => {
@@ -60,18 +72,17 @@ export const setBlogs = (notes) => ({
 export const startSaveBlog = (note) => {
 	return async (dispatch, getState) => {
 		const { uid } = getState().auth;
-		const blogToFirestore = { ...note };
-		delete blogToFirestore.id;
+		const { id } = note;
 
-		await db.doc(`${uid}/git/blogs/${note.id}`).update(blogToFirestore);
+		await db.doc(`${uid}/git/blogs/${id}`).update(note);
 
-		dispatch(refreshBlog(blogToFirestore.id, blogToFirestore));
+		dispatch(refreshBlog(id, note));
 
 		Swal.fire({
 			icon: 'success',
 			position: 'top-end',
 			text: 'Blog almacenado sin problema',
-			timer: 2000,
+			timer: 3000,
 			title: note.title,
 			showConfirmButton: false,
 		})
@@ -95,10 +106,11 @@ export const startImageUploading = (file) => {
 		const { active: activeBlog } = getState().blogs;
 
 		Swal.fire({
+			allowOutsideClick: false,
+			position: 'top-end',
 			title: 'Por favor espere...',
 			text: 'Cargando archivo',
-			allowOutsideClick: false,
-			onBeforeOpen: () => {
+			didOpen: () => {
 				Swal.showLoading();
 			}
 		});
@@ -112,3 +124,55 @@ export const startImageUploading = (file) => {
 	}
 
 }
+
+
+export const startDeleting = (id) => {
+	return (dispatch, getState) => {
+
+		Swal.fire({
+			title: '¿Eliminando Blog?',
+			text: "No podrá revertir esta acción",
+			icon: 'question',
+			showCancelButton: true,
+			confirmButtonColor: '#23548a',
+			cancelButtonColor: '#d33',
+			confirmButtonText: 'Si, eliminarlo!',
+			cancelButtonText: 'No, está bien'
+		}).then((result) => {
+
+			if (result.isConfirmed) {
+
+				const { uid } = getState().auth;
+				const { title } = getState().blogs.active;
+
+				// * Deleting collection from Firebase DB
+				db.doc(`${uid}/git/blogs/${id}`).delete();
+
+				// * Deleting from local store
+				dispatch(deleteBlog(id));
+
+				Swal.fire({
+					confirmButtonColor: '#23548a',
+					icon: 'success',
+					text: '¡Eliminado!',
+					title: title,
+				})
+			}
+		})
+
+
+
+	}
+
+}
+
+export const deleteBlog = (id) => ({
+	type: types.blogsDelete,
+	payload: id,
+})
+
+
+export const blogLogout = () => ({
+	type: types.blogsLogoutCleaning,
+	payload: null
+})

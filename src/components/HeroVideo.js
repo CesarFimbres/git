@@ -14,7 +14,7 @@ export const HeroVideo = () => {
 
 				<div className='videoHero-content'>
 					<div className="videoHero-frame"> </div>
-					<h1 className="videoHero-title">ES MOMENTO DE MEJORAR</h1>
+					<h1 className="videoHero-title ">ES MOMENTO DE MEJORAR</h1>
 					{/* <p className="videoHero-paragraph">
 					La vida no es esperar a que pase la tormenta, ni abrir el paraguas para no
 					mojarte, es aprender a bailar bajo la lluvia.
