@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
 
-
 import { firebase } from '../firebase/firebaseConfig';
 import { AuthRouter } from './AuthRouter';
 import { PrivateRoute } from './PrivateRoute';
@@ -18,7 +17,7 @@ import { HomeScreen } from '../components/pages/HomeScreen';
 import { Loading } from '../components/sections/Loading'
 import { login } from '../actions/auth';
 import { startLoadingBlogs } from '../actions/blogs';
-import { About } from '../components/sections/About';
+import { BlogEditScreen } from '../components/pages/blogs/BlogEditScreen';
 
 
 export const AppRouter = () => {
@@ -70,6 +69,13 @@ export const AppRouter = () => {
 					/>
 
 					<PrivateRoute
+						exact
+						isAuthenticated={isLoggedIn}
+						path='/edit-blog'
+						component={BlogEditScreen}
+					/>
+
+					<Route
 						exact
 						isAuthenticated={isLoggedIn}
 						path='/blog'

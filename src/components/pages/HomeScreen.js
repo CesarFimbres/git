@@ -4,7 +4,7 @@ import React from "react";
 
 import { About } from "../sections/About";
 import { Banner } from "../sections/Banner";
-import { LandingBlog } from "../sections/LandingBlog";
+// import { LandingBlog } from "../sections/LandingBlog";
 import { Footer } from "../sections/Footer";
 import { Hero } from "../sections/Hero";
 import { Mission } from "../sections/Mission";

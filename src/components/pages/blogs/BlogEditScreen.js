@@ -1,15 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-
-import { BlogCard } from './BlogCard'
+import { BlogAside } from './BlogAside';
 import { HeroData } from '../../../assets/data';
 import { Footer } from '../../sections/Footer';
 import { Navbar } from "../../sections/Navbar";
+import { NotesScreen } from './NotesScreen';
+import { NothingSelected } from './NothingSelected';
 
-export const BlogScreen = () => {
+export const BlogEditScreen = () => {
 
-	const { notes } = useSelector(state => state.blogs)
+	const { active } = useSelector(state => state.blogs)
 
 	return (
 
@@ -35,42 +36,26 @@ export const BlogScreen = () => {
 				</ul>
 			</div>
 
+			{/* This section is to create a new blog 
+				La sección de botones puede ser la barra lateral justo como lo hace frenando 
+				asi se simplifica el proceso de codificación
+			*/}
 
 
 
 
 			<div className='blog_screen-container'>
-
 				<main className='blog_screen-content'>
 
 					{
-						notes.map((note) => (
-							<BlogCard key={note.id}
-								category={note.category}
-								date={note.date}
-								imageAlt={note.title}
-								imageUrl={note.imageUrl}
-								title={note.title}
-							>
-								<p className='blog_screen-paragraph'> {note.body} </p>
-							</BlogCard>
-						))
+						(active)
+							? (<NotesScreen />)
+							: (<NothingSelected />)
 					}
 
 				</main>
 
-				<aside className='blog_aside'>
-
-					<form className='blog_aside-form_group'>
-						<input type="text" name="search_blog" placeholder='Buscar blog' />
-						<i className="fas fa-search"></i>
-					</form>
-
-					This section is to create a new blog
-					La sección de botones puede ser la barra lateral justo como lo hace frenando
-					asi se simplifica el proceso de codificación
-
-				</aside>
+				<BlogAside />
 
 			</div>
 
