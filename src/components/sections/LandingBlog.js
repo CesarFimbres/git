@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BlogData } from '../../assets/data'
+import { BlogLanding } from '../../assets/data'
 
 export const LandingBlog = () => {
 	return (
@@ -11,15 +11,15 @@ export const LandingBlog = () => {
 			<div className='blog-container'>
 				<div className='big_blog'>
 					<div className='big_blog-image align_center'>
-						<img src={BlogData[0].image} alt={BlogData[0].title} loading="lazy" />
+						<img src={BlogLanding[0].image} alt={BlogLanding[0].title} loading="lazy" />
 					</div>
 					<div className='big_blog-comments'>
-						<h3 className='big_blog-title'>{BlogData[0].title}</h3>
+						<h3 className='big_blog-title'>{BlogLanding[0].title}</h3>
 						<p className='big_blog-category'>
-							<span className='blog-date'>{BlogData[0].date}</span>
-							{"  -  " + BlogData[0].category}
+							<span className='blog-date'>{BlogLanding[0].date}</span>
+							{"  -  " + BlogLanding[0].category}
 						</p>
-						<p className='blog-paragraph'>{BlogData[0].paragraph}</p>
+						<p className='blog-paragraph'>{BlogLanding[0].paragraph}</p>
 						<a href="#Leer_mas">Leer más   <i className="fas fa-angle-double-right"></i> </a>
 					</div>
 				</div>
@@ -27,43 +27,43 @@ export const LandingBlog = () => {
 				<div className='card_blog-wrapper'>
 					<div className='card_blog'>
 						<div className='card_blog-image align_center'>
-							<img src={BlogData[1].image} alt={BlogData[1].title} loading="lazy" />
+							<img src={BlogLanding[1].image} alt={BlogLanding[1].title} loading="lazy" />
 						</div>
 						<div className='card_blog-comments'>
-							<h3 className='card_blog-title'>{BlogData[1].title}</h3>
+							<h3 className='card_blog-title'>{BlogLanding[1].title}</h3>
 							<p className='card_blog-category'>
-								<span className='blog-date'>{BlogData[1].date}</span>
-								{"  -  " + BlogData[1].category}
+								<span className='blog-date'>{BlogLanding[1].date}</span>
+								{"  -  " + BlogLanding[1].category}
 							</p>
-							<p className='blog-paragraph'>{BlogData[1].paragraph}</p>
+							<p className='blog-paragraph'>{BlogLanding[1].paragraph}</p>
 							<a href="#Leer_mas">Leer más   <i className="fas fa-angle-double-right"></i> </a>
 						</div>
 					</div>
 					<div className='card_blog'>
 						<div className='card_blog-image align_center'>
-							<img src={BlogData[2].image} alt={BlogData[2].title} loading="lazy" />
+							<img src={BlogLanding[2].image} alt={BlogLanding[2].title} loading="lazy" />
 						</div>
 						<div className='card_blog-comments'>
-							<h3 className='card_blog-title'>{BlogData[2].title}</h3>
+							<h3 className='card_blog-title'>{BlogLanding[2].title}</h3>
 							<p className='card_blog-category'>
-								<span className='blog-date'>{BlogData[2].date}</span>
-								{"  -  " + BlogData[2].category}
+								<span className='blog-date'>{BlogLanding[2].date}</span>
+								{"  -  " + BlogLanding[2].category}
 							</p>
-							<p className='blog-paragraph'>{BlogData[2].paragraph}</p>
+							<p className='blog-paragraph'>{BlogLanding[2].paragraph}</p>
 							<a href="#Leer_mas">Leer más   <i className="fas fa-angle-double-right"></i> </a>
 						</div>
 					</div>
 					<div className='card_blog'>
 						<div className='card_blog-image align_center'>
-							<img src={BlogData[3].image} alt={BlogData[3].title} loading="lazy" />
+							<img src={BlogLanding[3].image} alt={BlogLanding[3].title} loading="lazy" />
 						</div>
 						<div className='card_blog-comments'>
-							<h3 className='card_blog-title'>{BlogData[3].title}</h3>
+							<h3 className='card_blog-title'>{BlogLanding[3].title}</h3>
 							<p className='card_blog-category'>
-								<span className='blog-date'>{BlogData[3].date}</span>
-								{"  -  " + BlogData[3].category}
+								<span className='blog-date'>{BlogLanding[3].date}</span>
+								{"  -  " + BlogLanding[3].category}
 							</p>
-							<p className='blog-paragraph'>{BlogData[3].paragraph}</p>
+							<p className='blog-paragraph'>{BlogLanding[3].paragraph}</p>
 							<a href="#Leer_mas">Leer más   <i className="fas fa-angle-double-right"></i> </a>
 						</div>
 					</div>

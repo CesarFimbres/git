@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { startImageUploading, startSaveBlog } from '../../../actions/blogs'
@@ -5,7 +6,9 @@ import { startImageUploading, startSaveBlog } from '../../../actions/blogs'
 export const NotesAppBar = () => {
 
 	const dispatch = useDispatch();
-	const { active: blogActiveNote } = useSelector(state => state.blogs);
+	const { active: blogActiveNote, } = useSelector(state => state.blogs);
+
+	const blogDate = moment(blogActiveNote.date);
 
 	const handlePictureUpload = () => {
 		document.querySelector('#fileSelector').click();
@@ -27,7 +30,7 @@ export const NotesAppBar = () => {
 
 	return (
 		<div className='notes-appbar' >
-			<span>28 de agosto de 2020</span>
+			<strong>{blogDate.format("dddd, LL")}</strong>
 
 			<input
 				id='fileSelector'

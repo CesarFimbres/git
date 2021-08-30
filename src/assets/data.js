@@ -54,7 +54,7 @@ export const BannerData = [
 	},
 ];
 
-export const BlogData = [
+export const BlogLanding = [
 	{
 		category: " energía ",
 		index: 0,
@@ -210,4 +210,13 @@ export const ProjectsData = [
 		title: "Liverpool Santa Anita",
 		paragraph: "Obra realizada en 2020.",
 	},
+];
+
+export const HeroData = [
+	{
+		comment: 'Bienvenido a mi Blog',
+		image: blog00,
+		page: 'BlogScreen',
+		title: 'Angel de la independencia (Ciudad de México)'
+	}
 ];

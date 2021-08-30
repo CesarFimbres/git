@@ -20,7 +20,7 @@ export default function SwiperSlider() {
 		<Swiper
 			direction={'horizontal'}
 			spaceBetween={20}
-			slidesPerView={3}
+			slidesPerView={2}
 			navigation
 			loop={true}
 			mousewheel={false}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { useDispatch } from "react-redux";
 import { startLogout } from "../../actions/auth";
+import { About } from "./About";
 
 
 export const Navbar = () => {
@@ -28,6 +29,7 @@ export const Navbar = () => {
 					<input className="nav-input" type="checkbox" name="menu" id="menu" />
 
 					<div className="nav-menu">
+
 						{/* 
 						<a className="nav-item" href="#Services">
 							Servicios

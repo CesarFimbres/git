@@ -72,7 +72,7 @@ export const NotesScreen = () => {
 				className='btn_frame'
 				onClick={handleDelete}
 			>
-				Eliminar
+				Eliminar Blog
 			</button>
 
 		</div>

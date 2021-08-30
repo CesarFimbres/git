@@ -2,9 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 
-// import { BlogCard } from './BlogCard'
+import { BlogCard } from './BlogCard'
 import { BlogAside } from './BlogAside';
-import { BlogData } from '../../../assets/data';
+import { HeroData } from '../../../assets/data';
 import { Footer } from '../../sections/Footer';
 import { Navbar } from "../../sections/Navbar";
 import { NotesScreen } from './NotesScreen';
@@ -12,7 +12,7 @@ import { NothingSelected } from './NothingSelected';
 
 export const BlogScreen = () => {
 
-	const { active } = useSelector(state => state.blogs)
+	const { active, notes } = useSelector(state => state.blogs)
 
 	return (
 
@@ -20,7 +20,7 @@ export const BlogScreen = () => {
 			<Navbar />
 
 			<div className='blog_screen-hero animate__animated animate__fadeIn'>
-				<img src={BlogData[0].image} alt={BlogData[0].title} loading="lazy" />
+				<img src={HeroData[0].image} alt={HeroData[0].title} loading="lazy" />
 				<div className='blog_screen-overlay'>
 					<div className='blog_screen-hero_wrapper'>
 						<h3>Bienvenido a nuestro BLOG</h3>
@@ -50,32 +50,22 @@ export const BlogScreen = () => {
 				<main className='blog_screen-content'>
 					<div className='colapsado_noBorrar' >
 						Colapsado no borrar
-						{/* 					
-					{
-						BlogData.map((blogContent) => (
 
-							<BlogCard key={blogContent.index}
-								category={blogContent.category}
-								date={blogContent.date}
-								imageAlt={blogContent.title}
-								imageUrl={blogContent.image}
-								title={blogContent.title}
-							>
-								<p className='blog-paragraph'> {blogContent.paragraph}	</p>
+						{
+							notes.map((note) => (
 
-							</BlogCard>
-						))
-					}
-					<BlogCard key={BlogData[5].index}
-						category={BlogData[5].category}
-						date={BlogData[5].date}
-						imageAlt={BlogData[5].title}
-						imageUrl={BlogData[5].image}
-						title={BlogData[5].title}
-					>
-						<p className='blog-paragraph'> {BlogData[5].paragraph}	</p>
-					</BlogCard>
- */}
+								<BlogCard key={note.index}
+									category={note.category}
+									date={note.date}
+									imageAlt={note.title}
+									imageUrl={note.imageUrl}
+									title={note.title}
+								>
+									<p className='blog_screen-paragraph'> {note.body}	</p>
+
+								</BlogCard>
+							))
+						}
 
 					</div>
 
@@ -85,7 +75,6 @@ export const BlogScreen = () => {
 							: (<NothingSelected />)
 					}
 
-					{/* <NotesScreen /> */}
 				</main>
 
 				<BlogAside />

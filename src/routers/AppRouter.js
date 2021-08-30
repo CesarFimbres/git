@@ -18,6 +18,7 @@ import { HomeScreen } from '../components/pages/HomeScreen';
 import { Loading } from '../components/sections/Loading'
 import { login } from '../actions/auth';
 import { startLoadingBlogs } from '../actions/blogs';
+import { About } from '../components/sections/About';
 
 
 export const AppRouter = () => {

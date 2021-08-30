@@ -47,7 +47,7 @@ export const BlogAside = () => {
 				className='blog_aside-new_entry'
 				onClick={handleAddNew}
 			>
-				<i className='far fa-calendar-plus fa-4x'></i>
+				<i className='fas fa-blog fa-4x'></i>
 				<span>Nuevo blog</span>
 			</div>
 

@@ -33,7 +33,7 @@ export const HomeScreen = () => {
 
 			<Projects />
 
-			<LandingBlog />
+			{/* <LandingBlog /> */}
 
 			<Footer />
 
