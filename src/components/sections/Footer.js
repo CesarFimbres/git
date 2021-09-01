@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
 	return (
@@ -130,7 +131,7 @@ export const Footer = () => {
 
 				<div className='footer-list'>
 					<i className="fas fa-link"></i>
-					<a href="#blog">Blog</a>
+					<Link to='blog'>Blog</Link>
 				</div>
 
 			</div>

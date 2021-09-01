@@ -52,7 +52,8 @@ export const About = () => {
 							max-width='1024px'
 							playing={true}
 							// url='https://fb.watch/7oVHaxv5c_/'
-							url='https://youtu.be/w1xEYteayxM'
+							// url='https://youtu.be/w1xEYteayxM'
+							url='https://youtu.be/Pm8VymWBRXw'
 							width='100%'
 						/>
 

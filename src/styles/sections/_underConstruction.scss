@@ -1,0 +1,80 @@
+.under_construction {
+	align-items: center;
+	background: $pri;
+	display: flex;
+	flex-flow: column;
+	height: 85vh;
+	justify-content: center;
+	overflow: hidden;
+	padding: 50px 25px;
+	width: 100vw;
+	& h1 {
+		color: $white;
+		display: block;
+		font-family: 'Roboto' sans-serif;
+		font-size: 1.75rem;
+		font-weight: 100;
+		margin-top: 40px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	& .right {
+		align-self: flex-end;
+	}
+	& span {
+		color: $white;
+		font-size: 16px;
+		letter-spacing: 2px;
+		margin-bottom: 40px;
+		padding-right: 30px;
+		text-transform: uppercase;
+	}
+	&-logo_intecsa {
+		align-items: center;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		width: 100vw;
+
+		& .content {
+			align-items: flex-start;
+			color: darken($white, 15%);
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			margin-left: 10px;
+			padding-top: 3px;
+			& .grupo {
+				font-size: 20px;
+				font-weight: normal;
+				letter-spacing: 33px;
+				line-height: 20px;
+				text-transform: uppercase;
+			}
+			& .intecsa {
+				color: $white;
+				font-family: 'Roboto';
+				font-size: 50px;
+				font-weight: 900;
+				letter-spacing: -1px;
+				line-height: 50px;
+				margin-top: 6px;
+				text-transform: uppercase;
+			}
+		}
+		& svg {
+			height: 68px;
+			& #dark {
+				fill: #022577;
+			}
+			& #white {
+				fill: #ffffff;
+			}
+		}
+	}
+	&-men_working {
+		& svg {
+			width: 300px;
+		}
+	}
+}

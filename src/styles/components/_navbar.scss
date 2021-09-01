@@ -1,6 +1,7 @@
 .nav {
 	font-family: 'Montserrat', sans-serif;
 	background: $pri;
+	border-bottom: 1px solid lighten($pri, 10%);
 	border-top: 1px solid lighten($pri, 10%);
 	height: 5rem;
 	&-label,

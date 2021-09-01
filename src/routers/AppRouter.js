@@ -18,6 +18,7 @@ import { Loading } from '../components/sections/Loading'
 import { login } from '../actions/auth';
 import { startLoadingBlogs } from '../actions/blogs';
 import { BlogEditScreen } from '../components/pages/blogs/BlogEditScreen';
+import { UnderConstruction } from '../components/sections/UnderConstruction';
 
 
 export const AppRouter = () => {
@@ -80,6 +81,12 @@ export const AppRouter = () => {
 						isAuthenticated={isLoggedIn}
 						path='/blog'
 						component={BlogScreen}
+					/>
+
+					<Route
+						exact
+						path='/underConstruction'
+						component={UnderConstruction}
 					/>
 
 					<Route
