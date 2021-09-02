@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import ReactPlayer from 'react-player/lazy';
+import ReactPlayer from "react-player/youtube";
 
 import { AboutData } from "../../assets/data";
 import { Modal } from "../Modal";
 
 export const About = () => {
-
 	const [modalState, setModalState] = useState(false);
 
 	return (
@@ -17,10 +16,12 @@ export const About = () => {
 				</h1>
 				<div className="about-frame"></div>
 				<div className="about-image align-center">
-
-					<button className='btn-play' onClick={() => setModalState(!modalState)} >
+					<button className="btn-play" onClick={() => setModalState(!modalState)}>
 						<svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-							<path id="play" d="M20.4115 16.6269C20.4115 13.5477 23.7449 11.6232 26.4115 13.1628L62.4116 33.9474C65.0782 35.487 65.0782 39.336 62.4115 40.8756L26.4115 61.6602C23.7449 63.1998 20.4115 61.2753 20.4115 58.1961L20.4115 16.6269Z" />
+							<path
+								id="play"
+								d="M20.4115 16.6269C20.4115 13.5477 23.7449 11.6232 26.4115 13.1628L62.4116 33.9474C65.0782 35.487 65.0782 39.336 62.4115 40.8756L26.4115 61.6602C23.7449 63.1998 20.4115 61.2753 20.4115 58.1961L20.4115 16.6269Z"
+							/>
 						</svg>
 					</button>
 
@@ -40,39 +41,34 @@ export const About = () => {
 				changeModalState={setModalState}
 				showHeader={true}
 				showOverlay={true}
-				title='Más acerca de nosotros'
+				title="Más acerca de nosotros"
 			>
-
 				<Content>
-					<div className='player-wrapper' >
-						< ReactPlayer
-							className='video-player'
+					<div className="player-wrapper">
+						<ReactPlayer
+							className="video-player"
 							controls={true}
-							height='100%'
-							max-width='1024px'
+							height="100%"
+							max-width="1024px"
 							playing={true}
 							// url='https://fb.watch/7oVHaxv5c_/'
 							// url='https://youtu.be/w1xEYteayxM'
-							url='https://youtu.be/Pm8VymWBRXw'
-							width='100%'
+							url="https://youtu.be/Pm8VymWBRXw"
+							width="100%"
 						/>
-
 					</div>
 				</Content>
-
 			</Modal>
-
 		</section>
 	);
 };
-
 
 // *Style component section
 const Content = styled.div`
 	align-items: center;
 	display: flex;
 	flex-flow: column nowrap;
-	iframe{
+	iframe {
 		height: 40vw;
 		max-width: 1004px;
 		width: 80vw;
@@ -91,8 +87,8 @@ const Content = styled.div`
 		font-size: 18px;
 		margin-bottom: 20px;
 	}
-	@media only screen and (max-width: 768px){
-		iframe{
+	@media only screen and (max-width: 768px) {
+		iframe {
 			height: 85vh;
 			width: 85vw;
 		}
