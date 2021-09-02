@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.182501d4.chunk.css",
-    "main.js": "/static/js/main.d59a4973.chunk.js",
-    "main.js.map": "/static/js/main.d59a4973.chunk.js.map",
+    "main.js": "/static/js/main.a12e05d7.chunk.js",
+    "main.js.map": "/static/js/main.a12e05d7.chunk.js.map",
     "reactPlayerDailyMotion.js": "/static/js/reactPlayerDailyMotion.d3edd248.chunk.js",
     "reactPlayerDailyMotion.js.map": "/static/js/reactPlayerDailyMotion.d3edd248.chunk.js.map",
     "reactPlayerFacebook.js": "/static/js/reactPlayerFacebook.e2a90dbf.chunk.js",
@@ -38,30 +38,13 @@
     "static/css/15.d59c9b0b.chunk.css.map": "/static/css/15.d59c9b0b.chunk.css.map",
     "static/css/main.182501d4.chunk.css.map": "/static/css/main.182501d4.chunk.css.map",
     "static/js/15.00e87564.chunk.js.LICENSE.txt": "/static/js/15.00e87564.chunk.js.LICENSE.txt",
-    "static/media/CV_GrupoIntecsa.72fbcb92.pdf": "/static/media/CV_GrupoIntecsa.72fbcb92.pdf",
-    "static/media/about_01.733de6ee.jpg": "/static/media/about_01.733de6ee.jpg",
-    "static/media/banner_01.7465f6ae.jpg": "/static/media/banner_01.7465f6ae.jpg",
-    "static/media/blog_00.f3369ed9.jpg": "/static/media/blog_00.f3369ed9.jpg",
-    "static/media/heroVideo.baac0d98.mp4": "/static/media/heroVideo.baac0d98.mp4",
-    "static/media/logo-csm.06091b1c.png": "/static/media/logo-csm.06091b1c.png",
-    "static/media/logo-eguel.4977a213.svg": "/static/media/logo-eguel.4977a213.svg",
-    "static/media/logo-ita.e76a6471.svg": "/static/media/logo-ita.e76a6471.svg",
-    "static/media/logo-ite.ad4e3262.svg": "/static/media/logo-ite.ad4e3262.svg",
-    "static/media/mission_01.6a6aa829.jpg": "/static/media/mission_01.6a6aa829.jpg",
-    "static/media/projects_01.183fb132.jpg": "/static/media/projects_01.183fb132.jpg",
-    "static/media/projects_02.f5789a7d.jpg": "/static/media/projects_02.f5789a7d.jpg",
-    "static/media/projects_03.92692307.jpg": "/static/media/projects_03.92692307.jpg",
-    "static/media/projects_04.e7c62847.jpg": "/static/media/projects_04.e7c62847.jpg",
-    "static/media/projects_05.19e9bb72.jpg": "/static/media/projects_05.19e9bb72.jpg",
-    "static/media/projects_06.f66b8ea6.jpg": "/static/media/projects_06.f66b8ea6.jpg",
-    "static/media/projects_07.f98efd0d.jpg": "/static/media/projects_07.f98efd0d.jpg",
-    "static/media/projects_08.e6f509b7.jpg": "/static/media/projects_08.e6f509b7.jpg"
+    "static/media/CV_GrupoIntecsa.72fbcb92.pdf": "/static/media/CV_GrupoIntecsa.72fbcb92.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.ddb6e644.js",
     "static/css/15.d59c9b0b.chunk.css",
     "static/js/15.00e87564.chunk.js",
     "static/css/main.182501d4.chunk.css",
-    "static/js/main.d59a4973.chunk.js"
+    "static/js/main.a12e05d7.chunk.js"
   ]
 }

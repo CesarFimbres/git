@@ -1,8 +1,10 @@
 import React from "react";
 import ReactPlayer from "react-player";
+// import ReactPlayer from 'react-player/lazy'
 
-import heroVideo from "./static/media/heroVideo.baac0d98.mp4";
+const heroVideo = 'https://res.cloudinary.com/fimbres/video/upload/v1630579996/heroVideo_m7r74f.mp4';
 
+// import heroVideo from "../assets/video/heroVideo.mp4";
 // const urlVideo = 'https://www.youtube.com/watch?v=t9YmurEuC5A';
 
 export const HeroVideo = () => {
