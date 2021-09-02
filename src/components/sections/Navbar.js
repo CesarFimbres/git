@@ -1,27 +1,32 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
 import { startLogout } from "../../actions/auth";
 
-
 export const Navbar = () => {
-
 	const dispatch = useDispatch();
 
 	const handleLogout = () => {
 		dispatch(startLogout());
-	}
-
+	};
 
 	return (
 		<header className="w_100">
 			<nav className="nav align">
 				<div className="nav-container">
-					<Link className="nav-logo" to='/'>
-						<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-							viewBox="0 0 850.4 850.4" enable-background="new 0 0 850.4 850.4" >
-							<path fill="#FFFFFF" d="M440.1,434.2h-14.6c-1.1,3.5-2.4,7-3.9,10.5c-5.4,11.7-12.6,20.9-21.6,27.7c-8.8,7.3-20.2,12.4-33.8,15.6
+					<Link className="nav-logo" to="/git/">
+						<svg
+							id="Capa_1"
+							xmlns="http://www.w3.org/2000/svg"
+							x="0px"
+							y="0px"
+							viewBox="0 0 850.4 850.4"
+							enable-background="new 0 0 850.4 850.4"
+						>
+							<path
+								fill="#FFFFFF"
+								d="M440.1,434.2h-14.6c-1.1,3.5-2.4,7-3.9,10.5c-5.4,11.7-12.6,20.9-21.6,27.7c-8.8,7.3-20.2,12.4-33.8,15.6
 								c-13.5,2.8-28.6,4.5-45.5,4.6v0c-0.3,0-0.5,0-0.8,0c-0.2,0-0.4,0-0.6,0h-0.7v0c-39-0.2-65.7-6.3-80.6-18.2
 								c-12.9-10.4-20.3-23.8-22.1-40.1h-94.1V514h318.4V434.2L440.1,434.2z M429.4,408.7c0,5.8-0.6,11.5-1.7,17h119.2v-66.6h-28.2v-13.4
 								h-89.3V408.7L429.4,408.7z M440.1,350.5H517v52.3h-76.9V350.5L440.1,350.5z M299.4,438.4c5.1,3.7,11.9,5.7,20.1,5.8
@@ -60,7 +65,6 @@ export const Navbar = () => {
 					<input className="nav-input" type="checkbox" name="menu" id="menu" />
 
 					<div className="nav-menu">
-
 						{/* 
 
 						<a className="nav-item" href="#Services">
@@ -73,7 +77,7 @@ export const Navbar = () => {
 							Nosotros
 						</a>
 						 */}
-						<Link className="nav-item" to='/blog'>
+						<Link className="nav-item" to="/git/blog">
 							Blog
 						</Link>
 						<a className="nav-item" href="https://itamx.com/dashboard">
@@ -81,9 +85,10 @@ export const Navbar = () => {
 						</a>
 						<a
 							className="nav-item"
-							href='#Logout'
+							href="#Logout"
 							onClick={handleLogout}
-							title='Logout'>
+							title="Logout"
+						>
 							<i className="fas fa-sign-out-alt"></i>
 						</a>
 					</div>

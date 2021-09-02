@@ -73,15 +73,15 @@ export const AppRouter = () => {
 						component={BlogScreen}
 					/>*/}
 
-					<Route exact isAuthenticated={true} path="/blog" component={BlogScreen} />
+					<Route exact path="/git/blog" component={BlogScreen} />
 
-					<Route exact path="/underConstruction" component={UnderConstruction} />
+					<Route exact path="/git/underConstruction" component={UnderConstruction} />
 
-					<Route exact path="/home" component={HomeScreen} />
+					<Route path="/git/home" component={HomeScreen} />
 
-					<Route exact path="/" component={HomeScreen} />
+					<Route exact path="/git/" component={HomeScreen} />
 
-					<Redirect to="/home" />
+					<Redirect to="/git/" />
 				</Switch>
 			</div>
 		</Router>
