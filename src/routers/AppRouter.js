@@ -51,24 +51,33 @@ export const AppRouter = () => {
 		<Router>
 			<div>
 				<Switch>
-					<PublicRoute path="/auth" component={AuthRouter} isAuthenticated={isLoggedIn} />
+					<PublicRoute
+						path="git/auth"
+						component={AuthRouter}
+						isAuthenticated={isLoggedIn}
+					/>
 
 					<PrivateRoute
 						exact
 						isAuthenticated={isLoggedIn}
-						path="/editBlog"
+						path="git/editBlog"
 						component={BlogEditScreen}
 					/>
 
-					<Route exact isAuthenticated={isLoggedIn} path="/blog" component={BlogScreen} />
+					<Route exact path="git/" component={HomeScreen} />
 
-					<Route exact path="/underConstruction" component={UnderConstruction} />
+					<Route exact path="git/underConstruction" component={UnderConstruction} />
 
-					<Route exact path="/home" component={HomeScreen} />
+					<Route exact path="git/home" component={HomeScreen} />
 
 					<Route exact path="git/" component={HomeScreen} />
 
-					<Route exact path="/" component={HomeScreen} />
+					<Route
+						exact
+						isAuthenticated={isLoggedIn}
+						path="git/blog"
+						component={BlogScreen}
+					/>
 
 					<Redirect to="/" />
 				</Switch>
