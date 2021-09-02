@@ -141,12 +141,12 @@ export const Footer = () => {
 
 				<div className='footer-list'>
 					<div className='footer-post_date'>
-						<p className='footer-post_day'>11</p>
-						<p className='footer-post_month'>AGO</p>
+						<p className='footer-post_day'>12</p>
+						<p className='footer-post_month'>AGO.</p>
 						<p className='footer-post_year'>2021</p>
 					</div>
 					<div className='footer-post_data'>
-						<h4>¿ Qué es código red ?</h4>
+						<h4>Los ingenieros salvamos al mundo</h4>
 						<p>
 							<i className="fas fa-user-tie"> </i> Admin -
 							<i className="fas fa-comments"> 24</i>
@@ -156,12 +156,12 @@ export const Footer = () => {
 
 				<div className='footer-list'>
 					<div className='footer-post_date'>
-						<p className='footer-post_day'>30</p>
-						<p className='footer-post_month'>JUL</p>
+						<p className='footer-post_day'>05</p>
+						<p className='footer-post_month'>AGO.</p>
 						<p className='footer-post_year'>2021</p>
 					</div>
 					<div className='footer-post_data'>
-						<h4>5 Ventajas de usar Electroducto</h4>
+						<h4>¿ Usar código de red ?</h4>
 						<p>
 							<i className="fas fa-user-tie"> </i> Admin -
 							<i className="fas fa-comments"> 13</i>

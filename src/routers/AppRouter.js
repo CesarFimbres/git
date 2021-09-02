@@ -72,7 +72,7 @@ export const AppRouter = () => {
 					<PrivateRoute
 						exact
 						isAuthenticated={isLoggedIn}
-						path='/edit-blog'
+						path='/editBlog'
 						component={BlogEditScreen}
 					/>
 

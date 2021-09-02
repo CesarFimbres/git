@@ -18,7 +18,7 @@ import logoIte from "./img/logo-ite.svg";
 // import logoGit from "./img/logo-git.svg";
 // import logoGrupo from './img/logo-grupo_intecsa.svg'
 
-import mission01 from "./img/misison_01.jpg";
+import mission01 from "./img/mission_01.jpg";
 
 import projects01 from "./img/projects_01.jpg";
 import projects02 from "./img/projects_02.jpg";
@@ -54,70 +54,26 @@ export const BannerData = [
 	},
 ];
 
-export const BlogLanding = [
+export const BlogData = [
 	{
-		category: " energía ",
-		index: 0,
-		image: blog00,
-		title: "Grupo Intecsa S. A. de C. V.?",
-		paragraph:
-			"--",
+		author: 'Ing. César Fimbres',
+		body: '',
+		category: 'energía',
+		date: '05/08/2021',
+		imageUrl: 'https://res.cloudinary.com/fimbres/image/upload/v1629989299/prelqwzi7vqzxe4nmw4f.jpg',
+		intro: 'Disposiciones que establecen los criterios de eficiencia, calidad, confiabilidad, continuidad, seguridad y sustentabilidad del Sistema Eléctrico Nacional',
+		title: '¿Qué es el Código de Red?',
 	},
 	{
-		category: "energía",
-		date: "09 Octubre, 2020",
-		index: 1,
-		intro: "",
-		image: blog01,
-		title: "¿Qué es el Código de Red y por qué debemos cumplirlo?",
-		paragraph:
-			"Hablar de Código de Red, hoy en día es muy recurrente en el entorno eléctrico y otros ámbitos; sin embargo, aún no queda totalmente claro. Nos han dicho que debemos cumplirlo para no ser sancionados por la Comisión Reguladora de Energía (CRE) y pagar multas por miles de pesos, pero te has preguntado: ¿Qué es el Código de Red? y ¿Por qué debo cumplirlo?.",
+		author: 'Ing. César Fimbres',
+		body: '',
+		category: 'energía',
+		date: '12/08/2021',
+		imageUrl: 'https://res.cloudinary.com/fimbres/image/upload/v1630571167/mollbodifvd9hkvwjira.jpg',
+		intro: 'Esto significa eficiencia energética, las tecnologías existentes permiten la utilización de fuentes de energías limpias y renovables',
+		title: 'Los ingenieros salvamos al mundo',
 	},
-	{
-		category: "construcción",
-		date: "01 Agosto, 2021",
-		index: 2,
-		intro: "",
-		image: blog02,
-		title: "Tipos de cimientos para construcción",
-		paragraph: "Al construir o ampliar nuestro hogar es importante tener la asesoría de un especialista en arquitectura o ingeniería civil, con el fin de evitar uno de los errores más frecuentes, el cual radica en la cimentación, que es la base de toda la obra y le dará seguridad especialmente en las zonas sísmicas como la Ciudad de México. 	El tipo de cimentación se elegirá con base en factores como el suelo, el tamaño y peso aproximado de la construcción, además de la instalación hidráulica y la correcta distribución del terreno para tener el espacio suficiente para la obra. La elección adecuada del tipo de cimientos se verá reflejada en la estructura, de lo contrario pueden tenerse problemas a mediano o largo plazo, que van desde cuarteaduras hasta hundimientos y caídas de muros.",
-	},
-	{
-		category: "diseño",
-		date: "01 Agosto, 2021",
-		index: 3,
-		intro: "",
-		image: blog03,
-		title: "Liverpool Santa Anita",
-		paragraph: "Obra realizada en 2020.",
-	},
-	{
-		category: "instalaciones",
-		date: "01 Agosto, 2021",
-		index: 4,
-		intro: "",
-		image: blog04,
-		title: "Liverpool Santa Anita",
-		paragraph: "Obra realizada en 2020.",
-	},
-	{
-		category: "",
-		date: "01 Agosto, 2021",
-		index: 5,
-		intro: "",
-		image: blog05,
-		title: "Liverpool Santa Anita",
-		paragraph: "Obra realizada en 2020.",
-	},
-	{
-		category: "",
-		date: "01 Agosto, 2021",
-		index: 6,
-		intro: "",
-		image: blog06,
-		title: "Liverpool Santa Anita",
-		paragraph: "Obra realizada en 2020.",
-	},
+
 ];
 
 export const Enterprises = [
