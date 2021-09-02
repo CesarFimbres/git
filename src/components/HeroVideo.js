@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 
-import heroVideo from "../assets/video/heroVideo.mp4";
+import heroVideo from "./static/media/heroVideo.baac0d98.mp4";
 
 // const urlVideo = 'https://www.youtube.com/watch?v=t9YmurEuC5A';
 
