@@ -4,12 +4,12 @@ import aboutCurriculumVitae from "./doc/CV_GrupoIntecsa.pdf";
 import banner01 from "./img/banner_01.jpg";
 
 import blog00 from "./img/blog_00.jpg";
-import blog01 from "./img/blog_01.jpg";
-import blog02 from "./img/blog_02.jpg";
-import blog03 from "./img/blog_03.jpg";
-import blog04 from "./img/blog_04.jpg";
-import blog05 from "./img/blog_05.jpg";
-import blog06 from "./img/blog_06.jpg";
+// import blog01 from "./img/blog_01.jpg";
+// import blog02 from "./img/blog_02.jpg";
+// import blog03 from "./img/blog_03.jpg";
+// import blog04 from "./img/blog_04.jpg";
+// import blog05 from "./img/blog_05.jpg";
+// import blog06 from "./img/blog_06.jpg";
 
 import logoCsm from "./img/logo-csm.png";
 import logoEguel from "./img/logo-eguel.svg";
