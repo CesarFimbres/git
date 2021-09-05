@@ -153,14 +153,19 @@ export const Footer = () => {
 			<div className="footer-contact">
 				<h3>Contacto</h3>
 
-				<div className="footer-list">
+				<a className="footer-list"
+					href="https://goo.gl/maps/HEtXjtPLE2dBZ3C68"
+					target="_blank"
+					rel="noopener follow noreferrer"
+					aria-label="Cómo llegar"
+				>
 					<i className="fas fa-map-marker-alt"></i>
 					<p>
 						Calle Raúl Zárate Machuca No.11, <br />
 						Colonia Cuevitas, C. P.01220, <br />
 						Ciudad de México, CDMX.
 					</p>
-				</div>
+				</a>
 
 				<div className="footer-list">
 					<i className="fas fa-paper-plane"></i>
@@ -186,7 +191,9 @@ export const Footer = () => {
 
 				<div className="footer-list">
 					<i className="fas fa-link"></i>
-					<Link to="/git/blog">Blog</Link>
+					<Link to="/git/blog">
+						Blog
+					</Link>
 				</div>
 			</div>
 
