@@ -4,7 +4,7 @@ import { AboutData } from "../../assets/data";
 
 export const Mission = () => {
 	return (
-		<section id="Mission" className="mission w_100">
+		<section id="mission" className="mission w_100">
 			<h1 className="title_section">
 				Nuestra <span>misión / visión</span>
 			</h1>

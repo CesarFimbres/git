@@ -1,9 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { NavHashLink } from 'react-router-hash-link'
+
+
+// * When use Link this help to go to top element with an offSet param if you like 
+const scrollWithOffset = (el, offSet = 0) => {
+	const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+	const yOffset = offSet;
+	window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+};
+
+
 
 export const Footer = () => {
 	return (
-		<section id="Footer" className="footer">
+		<section id="footer" className="footer">
 			<div className="footer-enterprise">
 				<div className="footer-logo_intecsa">
 					<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
@@ -182,18 +193,37 @@ export const Footer = () => {
 				<h3>Enlaces útiles</h3>
 				<div className="footer-list">
 					<i className="fas fa-link"></i>
-					<a href="#about">Nosotros</a>
+					<NavHashLink
+						activeClassName="link_active"
+						className="nav-item"
+						to="/git/#about"
+						scroll={(el) => scrollWithOffset(el, 45)}
+					>
+						Nosotros
+					</NavHashLink>
 				</div>
 				<div className="footer-list">
 					<i className="fas fa-link"></i>
-					<a href="#projects">Proyectos</a>
+					<NavHashLink
+						activeClassName="link_active"
+						className="nav-item"
+						to="/git/#projects"
+						scroll={(el) => scrollWithOffset(el, 45)}
+					>
+						Proyectos
+					</NavHashLink>
 				</div>
 
 				<div className="footer-list">
 					<i className="fas fa-link"></i>
-					<Link to="/git/blog">
+					<NavHashLink
+						activeClassName="link_active"
+						className="nav-item"
+						to="/git/blog/#blog"
+						scroll={(el) => scrollWithOffset(el, -78)}
+					>
 						Blog
-					</Link>
+					</NavHashLink>
 				</div>
 			</div>
 

@@ -14,11 +14,12 @@ import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
 
 import { BlogScreen } from '../components/pages/blogs/BlogScreen';
+import { BlogEditScreen } from '../components/pages/blogs/BlogEditScreen';
 import { HomeScreen } from '../components/pages/HomeScreen';
 import { Loading } from '../components/sections/Loading'
 import { login } from '../actions/auth';
 import { startLoadingBlogs } from '../actions/blogs';
-import { BlogEditScreen } from '../components/pages/blogs/BlogEditScreen';
+import { UnderConstruction } from '../components/sections/UnderConstruction';
 
 
 export const AppRouter = () => {
@@ -75,6 +76,13 @@ export const AppRouter = () => {
 						path='/git/editBlog'
 						component={BlogEditScreen}
 					/>
+
+					<Route
+						exact
+						path='/git/underconstruction'
+						component={UnderConstruction}
+					/>
+
 
 					<Route
 						exact

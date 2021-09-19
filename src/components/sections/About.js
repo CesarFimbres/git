@@ -9,7 +9,7 @@ export const About = () => {
 	const [modalState, setModalState] = useState(false);
 
 	return (
-		<section id="About" className="about align w_100">
+		<section id="about" className="about align w_100">
 			<div className="about-container">
 				<h1 className="title_section">
 					Acerca de <span>nosotros</span>

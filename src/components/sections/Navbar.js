@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { NavHashLink } from 'react-router-hash-link'
+
 import { useDispatch } from "react-redux";
 import { startLogout } from "../../actions/auth";
+
+
+// * When use Link this help to go to top element with an offSet param if you like 
+const scrollWithOffset = (el, offSet = 0) => {
+	const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+	const yOffset = offSet;
+	window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+};
 
 export const Navbar = () => {
 	const dispatch = useDispatch();
@@ -13,7 +23,7 @@ export const Navbar = () => {
 
 	return (
 		<header className="w_100">
-			<nav className="nav align">
+			<nav id='navbar' className="nav align">
 				<div className="nav-container">
 					<Link className="nav-logo" to="/git/">
 						<svg
@@ -65,7 +75,59 @@ export const Navbar = () => {
 					<input className="nav-input" type="checkbox" name="menu" id="menu" />
 
 					<div className="nav-menu">
-						{/* 
+
+						<NavHashLink
+							activeClassName="link_active"
+							className="nav-item"
+							to="/git/blog/#blog"
+							scroll={(el) => scrollWithOffset(el, -78)}
+						>
+							Blog
+						</NavHashLink>
+
+						<NavHashLink
+							activeClassName="link_active"
+							className="nav-item"
+							to="/git/#enterprises"
+							scroll={(el) => scrollWithOffset(el, -45)}
+						>
+							Empresas
+						</NavHashLink>
+
+						<NavHashLink
+							activeClassName="link_active"
+							className="nav-item"
+							to="/git/#mission"
+							scroll={(el) => scrollWithOffset(el, 45)}
+						>
+							Misión
+						</NavHashLink>
+
+						<NavHashLink
+							activeClassName="link_active"
+							className="nav-item"
+							to="/git/#about"
+							scroll={(el) => scrollWithOffset(el, 45)}
+						>
+							Nosotros
+						</NavHashLink>
+
+						<a className="nav-item" href="https://itamx.com/dashboard">
+							Catálogo virtual
+						</a>
+
+						<NavHashLink
+							activeClassName="link_active"
+							className="nav-item"
+							onClick={handleLogout}
+							title="Logout"
+							to="/git/home/#home"
+							scroll={(el) => scrollWithOffset(el, -45)}
+						>
+							<i className="fas fa-sign-out-alt"></i>
+						</NavHashLink>
+
+						{/*
 
 						<a className="nav-item" href="#Services">
 							Servicios
@@ -76,21 +138,27 @@ export const Navbar = () => {
 						<a className="nav-item" href="#About">
 							Nosotros
 						</a>
-						 */}
-						<Link className="nav-item" to="/git/blog">
-							Blog
-						</Link>
-						<a className="nav-item" href="https://itamx.com/dashboard">
-							Catálogo virtual
-						</a>
+
 						<a
 							className="nav-item"
-							href="#Logout"
+							href="/git/home/#home"
 							onClick={handleLogout}
 							title="Logout"
 						>
 							<i className="fas fa-sign-out-alt"></i>
 						</a>
+
+						<NavHashLink
+							activeClassName="link_active"
+							className="nav-item"
+							to="/git/#Services"
+							scroll={(el) => scrollWithOffset(el, -45)}
+						>
+							Servicios
+						</NavHashLink>
+						
+						 */}
+
 					</div>
 				</div>
 			</nav>

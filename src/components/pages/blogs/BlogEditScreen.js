@@ -17,6 +17,7 @@ export const BlogEditScreen = () => {
 		<div className='blog_screen'>
 			<Navbar />
 
+			{/* 
 			<div className='blog_screen-hero animate__animated animate__fadeIn'>
 				<img src={HeroData[0].image} alt={HeroData[0].title} loading="lazy" />
 				<div className='blog_screen-overlay'>
@@ -25,6 +26,7 @@ export const BlogEditScreen = () => {
 					</div>
 				</div>
 			</div>
+			*/}
 
 			<div className='blog_screen-categories'>
 				<ul>
@@ -45,17 +47,16 @@ export const BlogEditScreen = () => {
 
 
 			<div className='blog_screen-container'>
-				<main className='blog_screen-content'>
 
+				<BlogAside />
+
+				<main className='blog_screen-content'>
 					{
 						(active)
 							? (<NotesScreen />)
 							: (<NothingSelected />)
 					}
-
 				</main>
-
-				<BlogAside />
 
 			</div>
 

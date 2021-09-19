@@ -1,7 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { NavHashLink } from 'react-router-hash-link'
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
+
+// * When use Link this help to go to top element with an offSet param if you like 
+const scrollWithOffset = (el, offSet = 0) => {
+	const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+	const yOffset = offSet;
+	window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+};
 
 export const UnderConstruction = () => {
 	return (
@@ -827,12 +835,17 @@ export const UnderConstruction = () => {
 				</div>
 
 				<h1>Sitio en construcción</h1>
-				<Link className="nav-item right" to="/git/">
-					Regresar
-				</Link>
+				<NavHashLink
+					activeClassName="link_active"
+					className="nav-item right"
+					to="/git/"
+					scroll={(el) => scrollWithOffset(el, -78)}
+				>
+					Regresar a inicio
+				</NavHashLink>
 			</section>
 
 			<Footer />
-		</div>
+		</div >
 	);
 };
